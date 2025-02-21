@@ -1,5 +1,5 @@
 // Initialize EmailJS with your public key
-emailjs.init("5eTZDQQOFLCjJJcFG");
+emailjs.init("mTUzqFhAKPQ66odIa");
 
 // Function to validate the form
 function validateForm(data) {
@@ -31,8 +31,8 @@ document
 
     // Send email using EmailJS
     emailjs
-      .sendForm("service_en4g6b5", "template_4ahymte", form, {
-        publicKey: "5eTZDQQOFLCjJJcFG",
+      .sendForm("service_0dke1tn", "template_0ks5dhf", form, {
+        publicKey: "mTUzqFhAKPQ66odIa",// eyuel chnaged 3 things
       })
       .then(
         () => {
