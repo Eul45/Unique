@@ -1,1645 +1,1841 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>Pro Video Editing Studio</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <meta content="video editing, viral videos, short form content, documentary, professional video editor" name="keywords" />
-    <meta content="Professional video editing services for social media, documentaries and creative content" name="description" />
-    <link rel="icon" type="image/png" href="img/logoikim.png">
-    <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon" />
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<head>
+  <meta charset="utf-8" />
+  <title>ViralCut Studios - Professional Video Editing</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <meta content="video editing, viral videos, short form content, documentary, professional editor" name="keywords" />
+  <meta content="Professional video editing services for viral short-form and long-form content" name="description" />
+  <link rel="icon" type="image/png" href="img/logoikim.png">
+  <!-- Favicon -->
+  <link href="img/favicon.ico" rel="icon" />
 
-    <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Roboto:wght@500;700;900&display=swap"
-      rel="stylesheet"
-    />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
-    <!-- Icon Font Stylesheet -->
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
-      rel="stylesheet"
-    />
+  <!-- Google Web Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Roboto:wght@500;700;900&display=swap"
+    rel="stylesheet" />
 
-    <!-- Libraries Stylesheet -->
-    <link href="lib/animate/animate.min.css" rel="stylesheet" />
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
-    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
+  <!-- Icon Font Stylesheet -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
 
-    <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Libraries Stylesheet -->
+  <link href="lib/animate/animate.min.css" rel="stylesheet" />
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+  <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
 
-    <!-- Template Stylesheet -->
-    <link href="css/style.css" rel="stylesheet" />
-    <style>
-      .carousel-image {
-        width: 100%; /* Ensure the image takes the full width of its container */
-        height: 850px; /* Set a fixed height for all images */
-        object-fit: cover; /* Ensures the image covers the area without distortion */
-      }
-      .proj-image {
-        width: 100%; /* Ensure the image takes the full width of its container */
-        height: 350px; /* Set a fixed height for all images */
-        object-fit: cover; /* Ensures the image covers the area without distortion */
-      }
-      /* Gradient Background for Icons */
-      .bg-gradient-primary {
-        background: linear-gradient(45deg, #6a11cb, #2575fc);
-      }
-      .bg-gradient-success {
-        background: linear-gradient(45deg, #2ebf91, #8360c3);
-      }
-      .bg-gradient-warning {
-        background: linear-gradient(45deg, #f9d423, #ff4e50);
-      }
+  <!-- Customized Bootstrap Stylesheet -->
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
 
-      /* Icon Wrapper */
-      .icon-wrapper {
-        width: 80px;
-        height: 80px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
+  <!-- Template Stylesheet -->
+  <link href="css/style.css" rel="stylesheet" />
+  <style>
+    .carousel-image {
+      width: 100%;
+      /* Ensure the image takes the full width of its container */
+      height: 1000px;
+      /* Set a fixed height for all images */
+      object-fit: cover;
+      /* Ensures the image covers the area without distortion */
+    }
 
-      /* Gradient Text for Numbers */
-      .text-gradient-primary {
-        background: linear-gradient(45deg, #6a11cb, #2575fc);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-      }
-      .text-gradient-success {
-        background: linear-gradient(45deg, #2ebf91, #8360c3);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-      }
-      .text-gradient-warning {
-        background: linear-gradient(45deg, #f9d423, #ff4e50);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-      }
+    .proj-image {
+      width: 100%;
+      /* Ensure the image takes the full width of its container */
+      height: 350px;
+      /* Set a fixed height for all images */
+      object-fit: cover;
+      /* Ensures the image covers the area without distortion */
+    }
 
-      /* Hover Effect */
-      .hover-effect {
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-      }
-      .hover-effect:hover {
-        transform: translateY(-10px);
-        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
-      }
-      /* Gradient Background for Icons */
-      .bg-gradient-primary {
-        background: linear-gradient(45deg, #6a11cb, #2575fc);
-      }
-      .bg-gradient-success {
-        background: linear-gradient(45deg, #2ebf91, #8360c3);
-      }
-      .bg-gradient-warning {
-        background: linear-gradient(45deg, #f9d423, #ff4e50);
-      }
-      .bg-gradient-info {
-        background: linear-gradient(45deg, #00c6fb, #005bea);
-      }
-      .bg-gradient-danger {
-        background: linear-gradient(45deg, #ff6b6b, #ffa5a5);
-      }
-      .bg-gradient-secondary {
-        background: linear-gradient(45deg, #6c757d, #adb5bd);
-      }
-      .bg-gradient-teal {
-        background: linear-gradient(45deg, #00b4db, #0083b0);
-      }
-      /* Icon Wrapper */
-      .icon-wrapper {
-        width: 80px;
-        height: 80px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
+    /* Gradient Background for Icons */
+    .bg-gradient-primary {
+      background: linear-gradient(45deg, #6a11cb, #2575fc);
+    }
 
-      /* Hover Effect */
-      .hover-effect {
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-      }
-      .hover-effect:hover {
-        transform: translateY(-10px);
-        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
-      }
-      /* Additional Gradient Backgrounds */
-      .bg-gradient-purple {
-        background: linear-gradient(45deg, #8e2de2, #4a00e0);
-      }
-      .bg-gradient-pink {
-        background: linear-gradient(45deg, #ff0099, #493240);
-      }
-      /* Hover Effect for Project Cards */
-      .hover-effect {
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-      }
-      .hover-effect:hover {
-        transform: translateY(-10px);
-        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
-      }
+    .bg-gradient-success {
+      background: linear-gradient(45deg, #2ebf91, #8360c3);
+    }
 
-      /* Project Card */
-      .project-card {
-        background: #fff;
-        border-radius: 10px;
-        overflow: hidden;
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      }
+    .bg-gradient-warning {
+      background: linear-gradient(45deg, #f9d423, #ff4e50);
+    }
 
-      .project-card:hover {
-        transform: translateY(-10px);
-        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-      }
+    /* Icon Wrapper */
+    .icon-wrapper {
+      width: 80px;
+      height: 80px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
 
-      /* Project Image */
-      .project-image {
-        position: relative;
-        overflow: hidden;
-      }
+    /* Gradient Text for Numbers */
+    .text-gradient-primary {
+      background: linear-gradient(45deg, #6a11cb, #2575fc);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
 
-      .project-image img {
-        transition: transform 0.3s ease;
-      }
+    .text-gradient-success {
+      background: linear-gradient(45deg, #2ebf91, #8360c3);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
 
-      .project-card:hover .project-image img {
-        transform: scale(1.1);
-      }
+    .text-gradient-warning {
+      background: linear-gradient(45deg, #f9d423, #ff4e50);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
 
-      /* Project Overlay */
-      .project-overlay {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: rgba(0, 0, 0, 0.6);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        opacity: 0;
-        transition: opacity 0.3s ease;
-      }
+    /* Hover Effect */
+    .hover-effect {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
 
-      .project-card:hover .project-overlay {
-        opacity: 1;
-      }
+    .hover-effect:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    }
 
-      .project-overlay a {
-        margin: 0 5px;
-        transition: transform 0.3s ease;
-      }
+    /* Gradient Background for Icons */
+    .bg-gradient-primary {
+      background: linear-gradient(45deg, #6a11cb, #2575fc);
+    }
 
-      .project-overlay a:hover {
-        transform: translateY(-5px);
-      }
+    .bg-gradient-success {
+      background: linear-gradient(45deg, #2ebf91, #8360c3);
+    }
 
-      /* Project Content */
-      .project-content {
-        background: #fff;
-        text-align: center;
-      }
+    .bg-gradient-warning {
+      background: linear-gradient(45deg, #f9d423, #ff4e50);
+    }
 
-      .project-content h5 {
-        font-size: 1.25rem;
-        margin-bottom: 0.5rem;
-      }
+    .bg-gradient-info {
+      background: linear-gradient(45deg, #00c6fb, #005bea);
+    }
 
-      .project-content p {
-        font-size: 0.9rem;
-        color: #6c757d;
-      }
-      
-      /* Video Editor Specific Styles */
-      .video-container {
-        position: relative;
-        width: 100%;
-        padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
-        height: 0;
-        overflow: hidden;
-        border-radius: 10px;
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-        transition: transform 0.3s ease;
-      }
-      
-      .video-container:hover {
-        transform: scale(1.02);
-      }
-      
-      .video-container iframe {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-      }
-      
-      .platform-icon {
-        font-size: 2rem;
-        margin: 0 15px;
-        transition: transform 0.3s ease, color 0.3s ease;
-      }
-      
-      .platform-icon:hover {
-        transform: translateY(-5px);
-      }
-      
-      .instagram-icon {
-        color: #E1306C;
-      }
-      
-      .tiktok-icon {
-        color: #000000;
-      }
-      
-      .youtube-icon {
-        color: #FF0000;
-      }
-      
-      .facebook-icon {
-        color: #4267B2;
-      }
-      
-      .video-reel-section {
-        background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
-        padding: 80px 0;
-        position: relative;
-        overflow: hidden;
-      }
-      
-      .video-reel-section::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: url('img/video-pattern.png');
-        opacity: 0.05;
-      }
-      
-      .animation-fade-in {
-        opacity: 0;
-        transform: translateY(30px);
-        animation: fadeIn 1s ease forwards;
-      }
-      
-      @keyframes fadeIn {
-        to {
-          opacity: 1;
-          transform: translateY(0);
-        }
-      }
-      
-      .animation-delay-1 {
-        animation-delay: 0.2s;
-      }
-      
-      .animation-delay-2 {
-        animation-delay: 0.4s;
-      }
-      
-      .animation-delay-3 {
-        animation-delay: 0.6s;
-      }
-      
-      .animation-delay-4 {
-        animation-delay: 0.8s;
-      }
-      
-      .animation-delay-5 {
-        animation-delay: 1s;
-      }
-      
-      .service-badge {
-        display: inline-block;
-        padding: 5px 15px;
-        border-radius: 50px;
-        font-size: 12px;
-        font-weight: bold;
-        margin-bottom: 15px;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-        background: rgba(255, 255, 255, 0.1);
-        backdrop-filter: blur(5px);
-        color: white;
-      }
-      
-      .video-stats {
-        background: rgba(255, 255, 255, 0.1);
-        backdrop-filter: blur(5px);
-        border-radius: 10px;
-        padding: 30px;
-        margin-top: 40px;
-        display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap;
-      }
-      
-      .stat-item {
-        text-align: center;
-        margin: 10px 20px;
-      }
-      
-      .stat-number {
-        font-size: 2.5rem;
-        font-weight: bold;
-        background: linear-gradient(45deg, #ff9a9e, #fad0c4);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        margin-bottom: 10px;
-      }
-      
-      .stat-label {
-        color: white;
-        font-size: 0.9rem;
-        opacity: 0.8;
-      }
-      
-      .portfolio-section {
-        background: #f8f9fa;
-        padding: 80px 0;
-      }
-      
-      .sticky-video {
-        position: sticky;
-        top: 100px;
-      }
-      
-      .modal-video-container {
-        width: 100%;
-        max-width: 900px;
-        margin: 0 auto;
-      }
-      
-      /* Animation for Timeline */
-      .timeline-container {
-        position: relative;
-        padding: 40px 0;
-      }
-      
-      .timeline-line {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 50%;
-        width: 4px;
-        background: linear-gradient(to bottom, transparent, #6a11cb, #2575fc, transparent);
-        transform: translateX(-50%);
+    .bg-gradient-danger {
+      background: linear-gradient(45deg, #ff6b6b, #ffa5a5);
+    }
+
+    .bg-gradient-secondary {
+      background: linear-gradient(45deg, #6c757d, #adb5bd);
+    }
+
+    .bg-gradient-teal {
+      background: linear-gradient(45deg, #00b4db, #0083b0);
+    }
+
+    /* Icon Wrapper */
+    .icon-wrapper {
+      width: 80px;
+      height: 80px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* Hover Effect */
+    .hover-effect {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .hover-effect:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    /* Additional Gradient Backgrounds */
+    .bg-gradient-purple {
+      background: linear-gradient(45deg, #8e2de2, #4a00e0);
+    }
+
+    .bg-gradient-pink {
+      background: linear-gradient(45deg, #ff0099, #493240);
+    }
+
+    /* Hover Effect for Project Cards */
+    .hover-effect {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .hover-effect:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    /* Project Card */
+    .project-card {
+      background: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .project-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Project Image */
+    .project-image {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .project-image img {
+      transition: transform 0.3s ease;
+    }
+
+    .project-card:hover .project-image img {
+      transform: scale(1.1);
+    }
+
+    /* Project Overlay */
+    .project-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.6);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .project-card:hover .project-overlay {
+      opacity: 1;
+    }
+
+    .project-overlay a {
+      margin: 0 5px;
+      transition: transform 0.3s ease;
+    }
+
+    .project-overlay a:hover {
+      transform: translateY(-5px);
+    }
+
+    /* Project Content */
+    .project-content {
+      background: #fff;
+      text-align: center;
+    }
+
+    .project-content h5 {
+      font-size: 1.25rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .project-content p {
+      font-size: 0.9rem;
+      color: #6c757d;
+    }
+
+    /* Video Section Styles */
+    .video-container {
+      position: relative;
+      width: 100%;
+      padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+      height: 0;
+      overflow: hidden;
+      border-radius: 10px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .video-container:hover {
+      transform: scale(1.02);
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+    }
+
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    .video-title {
+      font-size: 1.5rem;
+      margin: 1.5rem 0 0.5rem;
+      font-weight: 600;
+      color: #333;
+      transition: color 0.3s ease;
+    }
+
+    .video-card:hover .video-title {
+      color: #6a11cb;
+    }
+
+    .video-description {
+      color: #666;
+      margin-bottom: 2rem;
+    }
+
+    /* Animation Styles */
+    .fade-up {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.8s ease, transform 0.8s ease;
+    }
+
+    .fade-up.active {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .fade-in-left {
+      opacity: 0;
+      transform: translateX(-50px);
+      transition: opacity 0.8s ease, transform 0.8s ease;
+    }
+
+    .fade-in-left.active {
+      opacity: 1;
+      transform: translateX(0);
+    }
+
+    .fade-in-right {
+      opacity: 0;
+      transform: translateX(50px);
+      transition: opacity 0.8s ease, transform 0.8s ease;
+    }
+
+    .fade-in-right.active {
+      opacity: 1;
+      transform: translateX(0);
+    }
+
+    .zoom-in {
+      opacity: 0;
+      transform: scale(0.8);
+      transition: opacity 0.8s ease, transform 0.8s ease;
+    }
+
+    .zoom-in.active {
+      opacity: 1;
+      transform: scale(1);
+    }
+
+    /* Staggered Animation Delay */
+    .delay-1 {
+      transition-delay: 0.1s;
+    }
+
+    .delay-2 {
+      transition-delay: 0.2s;
+    }
+
+    .delay-3 {
+      transition-delay: 0.3s;
+    }
+
+    .delay-4 {
+      transition-delay: 0.4s;
+    }
+
+    .delay-5 {
+      transition-delay: 0.5s;
+    }
+
+    /* Video Portfolio Section */
+    .portfolio-filter {
+      margin-bottom: 2rem;
+    }
+
+    .portfolio-filter button {
+      margin: 0 5px;
+      padding: 8px 20px;
+      border-radius: 30px;
+      background: transparent;
+      color: #333;
+      border: 2px solid #e0e0e0;
+      font-weight: 500;
+      transition: all 0.3s ease;
+    }
+
+    .portfolio-filter button:hover,
+    .portfolio-filter button.active {
+      background: linear-gradient(45deg, #6a11cb, #2575fc);
+      color: white;
+      border-color: transparent;
+    }
+
+    /* Stats Counter */
+    .counter-box {
+      text-align: center;
+      padding: 30px 20px;
+      border-radius: 10px;
+      background: white;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .counter-box:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+    }
+
+    .counter-value {
+      font-size: 3rem;
+      font-weight: 700;
+      margin-bottom: 10px;
+      background: linear-gradient(45deg, #6a11cb, #2575fc);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .counter-title {
+      font-size: 1.2rem;
+      color: #555;
+      font-weight: 500;
+    }
+
+    /* Testimonial Styles */
+    .testimonial-card {
+      background: white;
+      border-radius: 10px;
+      padding: 30px;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+      margin: 20px 10px;
+      position: relative;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .testimonial-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+    }
+
+    .testimonial-card:before {
+      content: '\201C';
+      font-size: 80px;
+      position: absolute;
+      top: -10px;
+      left: 20px;
+      color: rgba(106, 17, 203, 0.1);
+      font-family: serif;
+    }
+
+    .client-info {
+      display: flex;
+      align-items: center;
+      margin-top: 20px;
+    }
+
+    .client-image {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin-right: 15px;
+    }
+
+    .client-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .client-details h5 {
+      margin: 0;
+      font-size: 1.1rem;
+      color: #333;
+    }
+
+    .client-details p {
+      margin: 0;
+      font-size: 0.9rem;
+      color: #777;
+    }
+
+    /* Process Timeline */
+    .timeline {
+      position: relative;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .timeline::after {
+      content: '';
+      position: absolute;
+      width: 6px;
+      background: linear-gradient(180deg, #6a11cb, #2575fc);
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      margin-left: -3px;
+      border-radius: 10px;
+    }
+
+    .timeline-item {
+      padding: 10px 40px;
+      position: relative;
+      width: 50%;
+      box-sizing: border-box;
+    }
+
+    .timeline-item:nth-child(odd) {
+      left: 0;
+    }
+
+    .timeline-item:nth-child(even) {
+      left: 50%;
+    }
+
+    .timeline-content {
+      padding: 20px 30px;
+      background: white;
+      position: relative;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .timeline-content:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    }
+
+    .timeline-item:nth-child(odd) .timeline-content::after {
+      content: '';
+      position: absolute;
+      width: 25px;
+      height: 25px;
+      right: -17px;
+      top: 15px;
+      background: white;
+      transform: rotate(45deg);
+      box-shadow: 5px -5px 5px rgba(0, 0, 0, 0.05);
+    }
+
+    .timeline-item:nth-child(even) .timeline-content::after {
+      content: '';
+      position: absolute;
+      width: 25px;
+      height: 25px;
+      left: -17px;
+      top: 15px;
+      background: white;
+      transform: rotate(45deg);
+      box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.05);
+    }
+
+    .timeline-dot {
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      right: -15px;
+      background: linear-gradient(45deg, #6a11cb, #2575fc);
+      border-radius: 50%;
+      top: 15px;
+      z-index: 1;
+      box-shadow: 0 0 0 4px rgba(106, 17, 203, 0.2);
+    }
+
+    .timeline-item:nth-child(even) .timeline-dot {
+      left: -15px;
+    }
+
+    .timeline-date {
+      display: inline-block;
+      padding: 5px 15px;
+      background: linear-gradient(45deg, #6a11cb, #2575fc);
+      color: white;
+      border-radius: 20px;
+      font-size: 0.9rem;
+      margin-bottom: 10px;
+    }
+
+    @media screen and (max-width: 768px) {
+      .timeline::after {
+        left: 31px;
       }
       
       .timeline-item {
-        margin-bottom: 60px;
-        position: relative;
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
       }
       
-      .timeline-content {
-        background: white;
-        border-radius: 10px;
-        padding: 30px;
-        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-        position: relative;
-        width: 45%;
-        transition: transform 0.3s ease;
-      }
-      
-      .timeline-content:hover {
-        transform: translateY(-5px);
-      }
-      
-      .timeline-item:nth-child(odd) .timeline-content {
-        margin-left: auto;
-      }
-      
-      .timeline-item:nth-child(even) .timeline-content {
-        margin-right: auto;
-      }
-      
-      .timeline-item:nth-child(odd) .timeline-content::before {
-        content: '';
-        position: absolute;
-        top: 20px;
-        left: -10px;
-        width: 20px;
-        height: 20px;
-        background: white;
-        transform: rotate(45deg);
-      }
-      
-      .timeline-item:nth-child(even) .timeline-content::before {
-        content: '';
-        position: absolute;
-        top: 20px;
-        right: -10px;
-        width: 20px;
-        height: 20px;
-        background: white;
-        transform: rotate(45deg);
+      .timeline-item:nth-child(even) {
+        left: 0;
       }
       
       .timeline-dot {
-        width: 20px;
-        height: 20px;
-        background: white;
-        border-radius: 50%;
-        position: absolute;
-        top: 20px;
-        left: 50%;
-        transform: translateX(-50%);
-        box-shadow: 0 0 0 4px rgba(106, 17, 203, 0.3);
-        z-index: 1;
+        left: 16px;
+        right: auto;
       }
       
-      @media (max-width: 768px) {
-        .timeline-line {
-          left: 20px;
-        }
-        
-        .timeline-content {
-          width: calc(100% - 60px);
-          margin-left: 45px !important;
-        }
-        
-        .timeline-item:nth-child(odd) .timeline-content::before,
-        .timeline-item:nth-child(even) .timeline-content::before {
-          left: -10px;
-          right: auto;
-        }
-        
-        .timeline-dot {
-          left: 20px;
-        }
+      .timeline-item:nth-child(odd) .timeline-content::after,
+      .timeline-item:nth-child(even) .timeline-content::after {
+        left: -17px;
+        right: auto;
       }
-    </style>
-  </head>
+    }
+  </style>
+</head>
 
-  <body>
-    <!-- Spinner Start -->
-    <div
-      id="spinner"
-      class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
-    >
-      <div
-        class="spinner-grow text-primary"
-        style="width: 3rem; height: 3rem"
-        role="status"
-      >
-        <span class="sr-only">Loading...</span>
-      </div>
+<body>
+  <!-- Spinner Start -->
+  <div id="spinner"
+    class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+    <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem" role="status">
+      <span class="sr-only">Loading...</span>
     </div>
-    <!-- Spinner End -->
+  </div>
+  <!-- Spinner End -->
 
-    <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0">
-      <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
-        <img src="img/logo.png" alt="Video Editor Logo" style="width: 50px; height: 50px; border-radius: 50%; margin-right: 10px;">
-        <h2 class="m-0 text-primary">ViralCut Studio</h2>
-      </a>
-      
-      <button
-        type="button"
-        class="navbar-toggler me-4"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarCollapse"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarCollapse">
-        <div class="navbar-nav ms-auto p-4 p-lg-0">
-          <a href="#home" class="nav-item nav-link active">Home</a>
-          <a href="#services" class="nav-item nav-link">Services</a>
-          <a href="#portfolio" class="nav-item nav-link">Portfolio</a>
-          <a href="#viral-videos" class="nav-item nav-link">Viral Work</a>
-          <a href="#process" class="nav-item nav-link">Process</a>
-          <a href="#about" class="nav-item nav-link">About</a>
-        </div>
-        <a
-          href="#contact"
-          class="btn btn-primary py-4 px-lg-5 d-none d-lg-block"
-          >Get a Quote<i class="fa fa-arrow-right ms-3"></i
-        ></a>
-      </div>
-    </nav>
-    <!-- Navbar End -->
-
-    <!-- Carousel Start -->
-    <div class="container-fluid p-0 pb-5" id="home">
-      <div class="owl-carousel header-carousel position-relative">
-        <!-- Slide 1 -->
-        <div class="owl-carousel-item position-relative">
-          <img
-            class="img-fluid carousel-image"
-            src="img/video-editing-banner.jpg"
-            alt="Video Editing Banner"
-          />
-          <div
-            class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center"
-            style="background: rgba(33, 33, 33, 0.8)"
-          >
-            <div class="container">
-              <div class="row justify-content-center">
-                <div class="col-12 col-lg-8 text-center">
-                  <h5
-                    class="text-white text-uppercase mb-3 animated slideInDown"
-                  >
-                    Professional Video Editing
-                  </h5>
-                  <h1 class="display-3 text-white animated slideInDown mb-4">
-                    Turn Your Footage Into Viral Content
-                  </h1>
-                  <p class="fs-5 fw-medium text-white mb-4 pb-2">
-                    Specialized in creating attention-grabbing short-form videos for Instagram, 
-                    TikTok, YouTube Shorts, and Facebook Reels with professional pacing, effects, 
-                    and sound design that drives engagement.
-                  </p>
-                  <a
-                    href="#services"
-                    class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft"
-                    >Our Services</a
-                  >
-                  <a
-                    href="#contact"
-                    class="btn btn-light py-md-3 px-md-5 animated slideInRight"
-                    >Get Started Today</a
-                  >
+  <!-- Topbar Start -->
+  <!-- <div class="container-fluid bg-light p-0">
+        <div class="row gx-0 d-none d-lg-flex">
+            <div class="col-lg-7 px-5 text-start">
+                <div class="h-100 d-inline-flex align-items-center py-3 me-4">
+                    <small class="fa fa-map-marker-alt text-primary me-2"></small>
+                    <small>123 Street, New York, USA</small>
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Slide 2 -->
-        <div class="owl-carousel-item position-relative">
-          <img
-            class="img-fluid carousel-image"
-            src="img/documentary-editing.jpg"
-            alt="Documentary Editing"
-          />
-          <div
-            class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center"
-            style="background: rgba(33, 33, 33, 0.8)"
-          >
-            <div class="container">
-              <div class="row justify-content-center">
-                <div class="col-12 col-lg-8 text-center">
-                  <h5
-                    class="text-white text-uppercase mb-3 animated slideInDown"
-                  >
-                  Documentary & Long-Form Content
-                  </h5>
-                  <h1 class="display-3 text-white animated slideInDown mb-4">
-                    Crafting Compelling Visual Stories
-                  </h1>
-                  <p class="fs-5 fw-medium text-white mb-4 pb-2">
-                    From documentary films to long-form YouTube content, we create
-                    emotionally engaging visual narratives with professional color grading, 
-                    sound design, and pacing that keeps viewers watching.
-                  </p>
-                  <a
-                    href="#portfolio"
-                    class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft"
-                    >See Our Work</a
-                  >
-                  <a
-                    href="#contact"
-                    class="btn btn-light py-md-3 px-md-5 animated slideInRight"
-                    >Get Started Today</a
-                  >
+                <div class="h-100 d-inline-flex align-items-center py-3">
+                    <small class="far fa-clock text-primary me-2"></small>
+                    <small>Mon - Fri : 09.00 AM - 09.00 PM</small>
                 </div>
-              </div>
             </div>
-          </div>
-        </div>
-
-        <!-- Slide 3 -->
-        <div class="owl-carousel-item position-relative">
-          <img
-            class="img-fluid carousel-image"
-            src="img/social-media-editing.jpg"
-            alt="Social Media Editing"
-          />
-          <div
-            class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center"
-            style="background: rgba(33, 33, 33, 0.8)"
-          >
-            <div class="container">
-              <div class="row justify-content-center">
-                <div class="col-12 col-lg-8 text-center">
-                  <h5
-                    class="text-white text-uppercase mb-3 animated slideInDown"
-                  >
-                  Platform-Optimized Content
-                  </h5>
-                  <h1 class="display-3 text-white animated slideInDown mb-4">
-                    Custom Editing For Each Platform
-                  </h1>
-                  <p class="fs-5 fw-medium text-white mb-4 pb-2">
-                    One video, multiple formats. We optimize your content for each social platform's 
-                    unique requirements, ensuring maximum impact whether viewers are on 
-                    TikTok, YouTube, Instagram or Facebook.
-                  </p>
-                  <a
-                    href="#services"
-                    class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft"
-                    >Learn More</a
-                  >
-                  <a
-                    href="#contact"
-                    class="btn btn-light py-md-3 px-md-5 animated slideInRight"
-                    >Get Started Today</a
-                  >
+            <div class="col-lg-5 px-5 text-end">
+                <div class="h-100 d-inline-flex align-items-center py-3 me-4">
+                    <small class="fa fa-phone-alt text-primary me-2"></small>
+                    <small>+012 345 6789</small>
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Carousel End -->
-
-    <!-- Social Media Platforms Section -->
-    <div class="container-xxl py-5">
-      <div class="container">
-        <div class="text-center mb-5">
-          <h2 class="display-5 mb-4">Content Optimized For Every Platform</h2>
-          <div class="d-flex justify-content-center flex-wrap">
-            <div class="mx-4 my-3 text-center">
-              <i class="fab fa-instagram platform-icon instagram-icon"></i>
-              <h5>Instagram</h5>
-            </div>
-            <div class="mx-4 my-3 text-center">
-              <i class="fab fa-tiktok platform-icon tiktok-icon"></i>
-              <h5>TikTok</h5>
-            </div>
-            <div class="mx-4 my-3 text-center">
-              <i class="fab fa-youtube platform-icon youtube-icon"></i>
-              <h5>YouTube</h5>
-            </div>
-            <div class="mx-4 my-3 text-center">
-              <i class="fab fa-facebook platform-icon facebook-icon"></i>
-              <h5>Facebook</h5>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Service Start -->
-    <div class="container-xxl py-5" id="services">
-      <div class="container">
-        <div class="section-title text-center">
-          <h1 class="display-5 mb-5">Video Editing Services</h1>
-        </div>
-        <div class="row g-4">
-          <!-- Short-Form Viral Content -->
-          <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
-            <div
-              class="service-item text-center p-4 border border-2 border-light rounded hover-effect"
-            >
-              <div
-                class="icon-wrapper bg-gradient-primary rounded-circle mx-auto mb-3"
-              >
-                <i class="fab fa-tiktok fa-2x text-white"></i>
-              </div>
-              <h4 class="mb-3">Short-Form Viral Content</h4>
-              <p>
-                Eye-catching 15-60 second videos optimized for TikTok, Instagram Reels, 
-                YouTube Shorts and Facebook Reels with engaging pacing, effects, and trends.
-              </p>
-            </div>
-          </div>
-
-          <!-- Long-Form Content -->
-          <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
-            <div
-              class="service-item text-center p-4 border border-2 border-light rounded hover-effect"
-            >
-              <div
-                class="icon-wrapper bg-gradient-success rounded-circle mx-auto mb-3"
-              >
-                <i class="fab fa-youtube fa-2x text-white"></i>
-              </div>
-              <h4 class="mb-3">Long-Form YouTube Content</h4>
-              <p>
-                Professional editing for 10-30 minute YouTube videos with compelling storytelling, 
-                engaging pacing, B-roll integration, and retention-optimized structure.
-              </p>
-            </div>
-          </div>
-
-          <!-- Documentary Editing -->
-          <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
-            <div
-              class="service-item text-center p-4 border border-2 border-light rounded hover-effect"
-            >
-              <div
-                class="icon-wrapper bg-gradient-warning rounded-circle mx-auto mb-3"
-              >
-                <i class="fa fa-film fa-2x text-white"></i>
-              </div>
-              <h4 class="mb-3">Documentary Editing</h4>
-              <p>
-                Thoughtful, narrative-driven editing for documentary films and series
-                with professional pacing, emotional storytelling, and cinematic techniques.
-              </p>
-            </div>
-          </div>
-
-          <!-- Motion Graphics -->
-          <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
-            <div
-              class="service-item text-center p-4 border border-2 border-light rounded hover-effect"
-            >
-              <div
-                class="icon-wrapper bg-gradient-info rounded-circle mx-auto mb-3"
-              >
-                <i class="fa fa-object-group fa-2x text-white"></i>
-              </div>
-              <h4 class="mb-3">Motion Graphics & VFX</h4>
-              <p>
-                Custom animated graphics, text animations, visual effects and transitions
-                that enhance visual storytelling and create memorable moments in your videos.
-              </p>
-            </div>
-          </div>
-
-          <!-- Color Grading -->
-          <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
-            <div
-              class="service-item text-center p-4 border border-2 border-light rounded hover-effect"
-            >
-              <div
-                class="icon-wrapper bg-gradient-danger rounded-circle mx-auto mb-3"
-              >
-                <i class="fa fa-palette fa-2x text-white"></i>
-              </div>
-              <h4 class="mb-3">Color Grading</h4>
-              <p>
-                Professional color correction and stylistic color grading to establish
-                mood, enhance visual appeal, and ensure consistency across your content.
-              </p>
-            </div>
-          </div>
-
-          <!-- Sound Design -->
-          <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
-            <div
-              class="service-item text-center p-4 border border-2 border-light rounded hover-effect"
-            >
-              <div
-                class="icon-wrapper bg-gradient-secondary rounded-circle mx-auto mb-3"
-              >
-                <i class="fa fa-music fa-2x text-white"></i>
-              </div>
-              <h4 class="mb-3">Sound Design & Music</h4>
-              <p>
-                Expert audio editing, mixing, sound effects integration, and music selection
-                to create an immersive audio experience that elevates your video content.
-              </p>
-            </div>
-          </div>
-
-          <!-- Content Repurposing -->
-          <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
-            <div
-              class="service-item text-center p-4 border border-2 border-light rounded hover-effect"
-            >
-              <div
-                class="icon-wrapper bg-gradient-purple rounded-circle mx-auto mb-3"
-              >
-                <i class="fa fa-random fa-2x text-white"></i>
-              </div>
-              <h4 class="mb-3">Content Repurposing</h4>
-              <p>
-                Transform your long-form content into multiple short-form clips optimized for 
-                different platforms, maximizing your content's reach and engagement.
-              </p>
-            </div>
-          </div>
-
-          <!-- Subtitles & Captioning -->
-          <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
-            <div
-              class="service-item text-center p-4 border border-2 border-light rounded hover-effect"
-            >
-              <div
-                class="icon-wrapper bg-gradient-pink rounded-circle mx-auto mb-3"
-              >
-                <i class="fa fa-closed-captioning fa-2x text-white"></i>
-              </div>
-              <h4 class="mb-3">Subtitles & Captioning</h4>
-              <p>
-                Eye-catching, styled subtitles and captions that improve accessibility,
-                boost viewer retention, and optimize for sound-off viewing on social platforms.
-              </p>
-            </div>
-          </div>
-
-          <!-- Thumbnail Design -->
-          <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.7s">
-            <div
-              class="service-item text-center p-4 border border-2 border-light rounded hover-effect"
-            >
-              <div
-                class="icon-wrapper bg-gradient-teal rounded-circle mx-auto mb-3"
-              >
-                <i class="fa fa-image fa-2x text-white"></i>
-              </div>
-              <h4 class="mb-3">Thumbnail Design</h4>
-              <p>
-                High-converting YouTube thumbnails and video cover designs that grab attention,
-                increase click-through rates, and build a consistent visual brand.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Service End -->
-
-    <!-- Viral Videos Showcase Section -->
-    <div class="video-reel-section py-5" id="viral-videos">
-      <div class="container">
-        <div class="text-center mb-5">
-          <span class="service-badge animation-fade-in">Featured Work</span>
-          <h2 class="display-4 text-white mb-4 animation-fade-in animation-delay-1">Viral Video Portfolio</h2>
-          <p class="text-white opacity-75 mb-5 animation-fade-in animation-delay-2">Check out some of our most successful viral videos across different platforms</p>
-        </div>
-        
-        <div class="row g-4">
-          <!-- YouTube Video 1 -->
-          <div class="col-lg-6 mb-5 animation-fade-in animation-delay-2">
-            <div class="video-container mb-3">
-              <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-            <h4 class="text-white mt-3">Epic Travel Adventure</h4>
-            <p class="text-white opacity-75">This viral travel video amassed over 2 million views by combining stunning visuals with perfectly timed music drops and smooth transitions.</p>
-            <div class="d-flex align-items-center mt-3">
-              <i class="fab fa-youtube text-danger me-2"></i>
-              <span class="text-white opacity-75">2.3M views</span>
-            </div>
-          </div>
-          
-          <!-- YouTube Video 2 -->
-          <div class="col-lg-6 mb-5 animation-fade-in animation-delay-3">
-            <div class="video-container mb-3">
-              <iframe src="https://www.youtube.com/embed/WO82PoAczTc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-            <h4 class="text-white mt-3">Behind-the-Scenes Documentary</h4>
-            <p class="text-white opacity-75">This documentary excerpt tells a compelling story through careful editing, pacing, and emotive color grading that enhances the narrative.</p>
-            <div class="d-flex align-items-center mt-3">
-              <i class="fab fa-youtube text-danger me-2"></i>
-              <span class="text-white opacity-75">1.7M views</span>
-            </div>
-          </div>
-          
-          <!-- YouTube Video 3 -->
-          <div class="col-lg-6 mb-5 animation-fade-in animation-delay-4">
-            <div class="video-container mb-3">
-              <iframe src="https://www.youtube.com/embed/Lnn2rJpjar4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-            <h4 class="text-white mt-3">Tech Review Transformation</h4>
-            <p class="text-white opacity-75">Our editing transformed a standard tech review into an engaging, visually dynamic video with motion graphics and snappy pacing.</p>
-            <div class="d-flex align-items-center mt-3">
-              <i class="fab fa-youtube text-danger me-2"></i>
-              <span class="text-white opacity-75">3.1M views</span>
-            </div>
-          </div>
-          
-          <!-- YouTube Video 4 -->
-          <div class="col-lg-6 mb-5 animation-fade-in animation-delay-5">
-            <div class="video-container mb-3">
-              <iframe src="https://www.youtube.com/embed/Vfblh4hLlP4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-            <h4 class="text-white mt-3">Cinematic Short Film</h4>
-            <p class="text-white opacity-75">This atmospheric short film showcases our advanced color grading, sound design, and visual effects capabilities in narrative storytelling.</p>
-            <div class="d-flex align-items-center mt-3">
-              <i class="fab fa-youtube text-danger me-2"></i>
-              <span class="text-white opacity-75">1.9M views</span>
-            </div>
-          </div>
-        </div>
-        
-        <div class="text-center mt-5">
-          <h3 class="text-white mb-4 animation-fade-in">Social Media Success</h3>
-          <div class="video-stats animation-fade-in animation-delay-3">
-            <div class="stat-item">
-              <div class="stat-number" data-toggle="counter-up">50</div>
-              <div class="stat-label">Million+ Views</div>
-            </div>
-            <div class="stat-item">
-              <div class="stat-number" data-toggle="counter-up">73</div>
-              <div class="stat-label">Viral Videos</div>
-            </div>
-            <div class="stat-item">
-              <div class="stat-number" data-toggle="counter-up">24</div>
-              <div class="stat-label">Award-Winning Edits</div>
-            </div>
-            <div class="stat-item">
-              <div class="stat-number" data-toggle="counter-up">150</div>
-              <div class="stat-label">Happy Clients</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Portfolio Showcase -->
-    <div class="container-xxl py-5 portfolio-section" id="portfolio">
-      <div class="container">
-        <div class="section-title text-center">
-          <h1 class="display-5 mb-5">Featured Projects</h1>
-        </div>
-
-        <!-- Filter Buttons -->
-        <div class="text-center mb-4">
-          <button
-            class="btn btn-outline-primary"
-            onclick="filterProjects('all')"
-          >
-            All Work
-          </button>
-          <button
-            class="btn btn-outline-primary"
-            onclick="filterProjects('short')"
-          >
-            Short Form
-          </button>
-          <button
-            class="btn btn-outline-primary"
-            onclick="filterProjects('long')"
-          >
-            Long Form
-          </button>
-          <button
-            class="btn btn-outline-primary"
-            onclick="filterProjects('documentary')"
-          >
-            Documentary
-          </button>
-          <button
-            class="btn btn-outline-primary"
-            onclick="filterProjects('motion')"
-          >
-            Motion Graphics
-          </button>
-        </div>
-
-        <div class="row g-4" id="projectGrid">
-          <!-- Project 1 -->
-          <div
-            class="col-lg-4 col-md-6 project-item short wow fadeInUp"
-            data-wow-delay="0.1s"
-          >
-            <div class="project-card">
-              <div class="project-image">
-                <img
-                  class="img-fluid proj-image"
-                  src="img/portfolio/tiktok-viral.jpg"
-                  alt="TikTok Viral"
-                />
-                <div class="project-overlay">
-                  <a
-                    class="btn btn-primary btn-sm"
-                    href="img/portfolio/tiktok-viral.jpg"
-                    data-lightbox="portfolio"
-                  >
-                    <i class="fa fa-eye"></i> View
-                  </a>
-                  <a class="btn btn-light btn-sm" href="#" data-bs-toggle="modal" data-bs-target="#videoModal1">
-                    <i class="fa fa-play"></i> Play
-                  </a>
+                <div class="h-100 d-inline-flex align-items-center">
+                    <a class="btn btn-sm-square bg-white text-primary me-1" href=""><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-sm-square bg-white text-primary me-1" href=""><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-sm-square bg-white text-primary me-1" href=""><i class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-sm-square bg-white text-primary me-0" href=""><i class="fab fa-instagram"></i></a>
                 </div>
-              </div>
-              <div class="project-content p-4">
-                <h5 class="mb-2">TikTok Fashion Trend</h5>
-                <p class="text-muted mb-0">
-                  Fast-paced fashion transition video that went viral with 5M+ views, featuring 
-                  synchronized music beats and creative transitions.
+            </div>
+        </div>
+    </div> -->
+  <!-- Topbar End -->
+
+  <!-- Navbar Start -->
+  <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0">
+    <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+      <img src="img/logo.png" alt="ViralCut Studios Logo"
+        style="width: 50px; height: 50px; border-radius: 50%; margin-right: 10px;">
+      <h2 class="m-0 text-primary">ViralCut Studios</h2>
+    </a>
+
+    <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <div class="navbar-nav ms-auto p-4 p-lg-0">
+        <a href="#home" class="nav-item nav-link active">Home</a>
+        <a href="#services" class="nav-item nav-link">Services</a>
+        <a href="#portfolio" class="nav-item nav-link">Portfolio</a>
+        <a href="#process" class="nav-item nav-link">Process</a>
+        <a href="#about" class="nav-item nav-link">About</a>
+      </div>
+      <a href="#contact" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Get a Quote<i
+          class="fa fa-arrow-right ms-3"></i></a>
+    </div>
+  </nav>
+  <!-- Navbar End -->
+
+  <!-- Carousel Start -->
+  <style>
+    /* Add this CSS to ensure all images have the same size */
+    .carousel-image {
+      width: 100%;
+      /* Ensure the image takes the full width of its container */
+      height: 850px;
+      /* Set a fixed height for all images */
+      object-fit: cover;
+      /* Ensures the image covers the area without distortion */
+    }
+  </style>
+
+  <div class="container-fluid p-0 pb-5" id="home">
+    <div class="owl-carousel header-carousel position-relative">
+      <!-- Slide 1 -->
+      <div class="owl-carousel-item position-relative">
+        <img class="img-fluid carousel-image" src="1.jpg" alt="" />
+        <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center"
+          style="background: rgba(53, 53, 53, 0.7)">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-12 col-lg-8 text-center">
+                <h5 class="text-white text-uppercase mb-3 animated slideInDown">
+                  ViralCut Studios
+                </h5>
+                <h1 class="display-3 text-white animated slideInDown mb-4">
+                  Professional Video Editing
+                </h1>
+                <p class="fs-5 fw-medium text-white mb-4 pb-2">
+                  Transform your raw footage into captivating viral content. We specialize in creating 
+                  engaging videos for social media, documentaries, and promotional content that drives results.
                 </p>
+                <a href="#services" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Our Services</a>
+                <a href="#contact" class="btn btn-light py-md-3 px-md-5 animated slideInRight">Get Started Today</a>
               </div>
             </div>
           </div>
+        </div>
+      </div>
 
-          <!-- Project 2 -->
-          <div
-            class="col-lg-4 col-md-6 project-item long wow fadeInUp"
-            data-wow-delay="0.3s"
-          >
-            <div class="project-card">
-              <div class="project-image">
-                <img
-                  class="img-fluid proj-image"
-                  src="img/portfolio/youtube-tech.jpg"
-                  alt="YouTube Tech Review"
-                />
-                <div class="project-overlay">
-                  <a
-                    class="btn btn-primary btn-sm"
-                    href="img/portfolio/youtube-tech.jpg"
-                    data-lightbox="portfolio"
-                  >
-                    <i class="fa fa-eye"></i> View
-                  </a>
-                  <a class="btn btn-light btn-sm" href="#" data-bs-toggle="modal" data-bs-target="#videoModal2">
-                    <i class="fa fa-play"></i> Play
-                  </a>
-                </div>
-              </div>
-              <div class="project-content p-4">
-                <h5 class="mb-2">Tech Review Series</h5>
-                <p class="text-muted mb-0">
-                  Professional YouTube tech review with custom motion graphics, 
-                  comparison overlays, and engaging B-roll sequences.
+      <!-- Slide 2 -->
+      <div class="owl-carousel-item position-relative">
+        <img class="img-fluid carousel-image" src="3.jpg" alt="" />
+        <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center"
+          style="background: rgba(53, 53, 53, 0.7)">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-12 col-lg-8 text-center">
+                <h5 class="text-white text-uppercase mb-3 animated slideInDown">
+                  ViralCut Studios
+                </h5>
+                <h1 class="display-3 text-white animated slideInDown mb-4">
+                  Short-Form Viral Content
+                </h1>
+                <p class="fs-5 fw-medium text-white mb-4 pb-2">
+                  Specialized in creating attention-grabbing short videos for Instagram, TikTok, 
+                  YouTube Shorts, and Facebook Reels that boost engagement and grow your audience.
                 </p>
+                <a href="#portfolio" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">View Portfolio</a>
+                <a href="#contact" class="btn btn-light py-md-3 px-md-5 animated slideInRight">Get Started Today</a>
               </div>
             </div>
           </div>
+        </div>
+      </div>
 
-          <!-- Project 3 -->
-          <div
-            class="col-lg-4 col-md-6 project-item documentary wow fadeInUp"
-            data-wow-delay="0.5s"
-          >
-            <div class="project-card">
-              <div class="project-image">
-                <img
-                  class="img-fluid proj-image"
-                  src="img/portfolio/documentary.jpg"
-                  alt="Documentary"
-                />
-                <div class="project-overlay">
-                  <a
-                    class="btn btn-primary btn-sm"
-                    href="img/portfolio/documentary.jpg"
-                    data-lightbox="portfolio"
-                  >
-                    <i class="fa fa-eye"></i> View
-                  </a>
-                  <a class="btn btn-light btn-sm" href="#" data-bs-toggle="modal" data-bs-target="#videoModal3">
-                    <i class="fa fa-play"></i> Play
-                  </a>
-                </div>
-              </div>
-              <div class="project-content p-4">
-                <h5 class="mb-2">Environmental Documentary</h5>
-                <p class="text-muted mb-0">
-                  Award-winning documentary featuring cinematic color grading, 
-                  emotional pacing, and compelling narrative structure.
+      <!-- Slide 3 -->
+      <div class="owl-carousel-item position-relative">
+        <img class="img-fluid carousel-image" src="img/pexels-ron-lach-8102677.jpg" alt="" />
+        <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center"
+          style="background: rgba(53, 53, 53, 0.7)">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-12 col-lg-8 text-center">
+                <h5 class="text-white text-uppercase mb-3 animated slideInDown">
+                  ViralCut Studios
+                </h5>
+                <h1 class="display-3 text-white animated slideInDown mb-4">
+                  Documentary & Long-Form
+                </h1>
+                <p class="fs-5 fw-medium text-white mb-4 pb-2">
+                  Crafting compelling narratives through professional documentary and long-form video production.
+                  We bring your stories to life with cinematic quality and emotional impact.
                 </p>
+                <a href="#services" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Learn More</a>
+                <a href="#contact" class="btn btn-light py-md-3 px-md-5 animated slideInRight">Get Started Today</a>
               </div>
             </div>
           </div>
+        </div>
+      </div>
 
-          <!-- Project 4 -->
-          <div
-            class="col-lg-4 col-md-6 project-item short wow fadeInUp"
-            data-wow-delay="0.1s"
-          >
-            <div class="project-card">
-              <div class="project-image">
-                <img
-                  class="img-fluid proj-image"
-                  src="img/portfolio/instagram-reel.jpg"
-                  alt="Instagram Reel"
-                />
-                <div class="project-overlay">
-                  <a
-                    class="btn btn-primary btn-sm"
-                    href="img/portfolio/instagram-reel.jpg"
-                    data-lightbox="portfolio"
-                  >
-                    <i class="fa fa-eye"></i> View
-                  </a>
-                  <a class="btn btn-light btn-sm" href="#" data-bs-toggle="modal" data-bs-target="#videoModal4">
-                    <i class="fa fa-play"></i> Play
-                  </a>
-                </div>
-              </div>
-              <div class="project-content p-4">
-                <h5 class="mb-2">Instagram Fitness Reel</h5>
-                <p class="text-muted mb-0">
-                  High-energy fitness transformation reel with dynamic transitions
-                  and motivational text overlays that drove engagement.
+      <!-- Slide 4 -->
+      <div class="owl-carousel-item position-relative">
+        <img class="img-fluid carousel-image" src="img/pexels-jakubzerdzicki-19149826.jpg" alt="" />
+        <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center"
+          style="background: rgba(53, 53, 53, 0.7)">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-12 col-lg-8 text-center">
+                <h5 class="text-white text-uppercase mb-3 animated slideInDown">
+                  ViralCut Studios
+                </h5>
+                <h1 class="display-3 text-white animated slideInDown mb-4">
+                  Creative Effects & Animation
+                </h1>
+                <p class="fs-5 fw-medium text-white mb-4 pb-2">
+                  Elevate your content with stunning visual effects, motion graphics, and animations.
+                  Our creative team adds that professional touch that makes your videos stand out.
                 </p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Project 5 -->
-          <div
-            class="col-lg-4 col-md-6 project-item motion wow fadeInUp"
-            data-wow-delay="0.3s"
-          >
-            <div class="project-card">
-              <div class="project-image">
-                <img
-                  class="img-fluid proj-image"
-                  src="img/portfolio/motion-graphics.jpg"
-                  alt="Motion Graphics"
-                />
-                <div class="project-overlay">
-                  <a
-                    class="btn btn-primary btn-sm"
-                    href="img/portfolio/motion-graphics.jpg"
-                    data-lightbox="portfolio"
-                  >
-                    <i class="fa fa-eye"></i> View
-                  </a>
-                  <a class="btn btn-light btn-sm" href="#" data-bs-toggle="modal" data-bs-target="#videoModal5">
-                    <i class="fa fa-play"></i> Play
-                  </a>
-                </div>
-              </div>
-              <div class="project-content p-4">
-                <h5 class="mb-2">Product Launch Animation</h5>
-                <p class="text-muted mb-0">
-                  Custom motion graphics for a tech product launch featuring
-                  3D animations and dynamic text reveals with sound design.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Project 6 -->
-          <div
-            class="col-lg-4 col-md-6 project-item long wow fadeInUp"
-            data-wow-delay="0.5s"
-          >
-            <div class="project-card">
-              <div class="project-image">
-                <img
-                  class="img-fluid proj-image"
-                  src="img/portfolio/youtube-vlog.jpg"
-                  alt="YouTube Vlog"
-                />
-                <div class="project-overlay">
-                  <a
-                    class="btn btn-primary btn-sm"
-                    href="img/portfolio/youtube-vlog.jpg"
-                    data-lightbox="portfolio"
-                  >
-                    <i class="fa fa-eye"></i> View
-                  </a>
-                  <a class="btn btn-light btn-sm" href="#" data-bs-toggle="modal" data-bs-target="#videoModal1">
-                    <i class="fa fa-play"></i> Play
-                  </a>
-                </div>
-              </div>
-              <div class="project-content p-4">
-                <h5 class="mb-2">Travel Vlog Series</h5>
-                <p class="text-muted mb-0">
-                  Cinematic travel vlog with storytelling structure, location-based
-                  color grading, and immersive audio mixing.
-                </p>
+                <a href="#portfolio" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">See Examples</a>
+                <a href="#contact" class="btn btn-light py-md-3 px-md-5 animated slideInRight">Get Started Today</a>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+  </div>
+  <!-- Carousel End -->
 
-    <!-- Video Modals -->
-    <div class="modal fade" id="videoModal1" tabindex="-1" aria-labelledby="videoModalLabel1" aria-hidden="true">
-      <div class="modal-dialog modal-xl">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="videoModalLabel1">TikTok Fashion Trend</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body p-0">
-            <div class="modal-video-container">
-              <div class="video-container">
-                <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-              </div>
-            </div>
+  <!-- Stats Counter Start -->
+  <div class="container-xxl py-5">
+    <div class="container">
+      <div class="row g-4 justify-content-center">
+        <div class="col-md-6 col-lg-3 wow fadeInUp" data-wow-delay="0.1s">
+          <div class="counter-box fade-up">
+            <div class="counter-value" data-toggle="counter-up">500</div>
+            <div class="counter-title">Projects Completed</div>
           </div>
         </div>
-      </div>
-    </div>
-
-    <!-- Process Timeline Section -->
-    <div class="container-xxl py-5" id="process">
-      <div class="container">
-        <div class="section-title text-center mb-5">
-          <h1 class="display-5 mb-3">Our Editing Process</h1>
-          <p class="fs-5 text-muted">We follow a structured approach to deliver exceptional results every time</p>
-        </div>
-        
-        <div class="timeline-container">
-          <div class="timeline-line"></div>
-          
-          <!-- Step 1 -->
-          <div class="timeline-item wow fadeInUp" data-wow-delay="0.1s">
-            <div class="timeline-dot"></div>
-            <div class="timeline-content">
-              <h4 class="mb-3">1. Discovery & Planning</h4>
-              <p class="mb-0">We start with understanding your goals, target audience, and desired outcome. Together, we'll develop a creative brief and editing plan tailored to your specific needs and platform requirements.</p>
-            </div>
-          </div>
-          
-          <!-- Step 2 -->
-          <div class="timeline-item wow fadeInUp" data-wow-delay="0.3s">
-            <div class="timeline-dot"></div>
-            <div class="timeline-content">
-              <h4 class="mb-3">2. Footage Review & Organization</h4>
-              <p class="mb-0">We carefully review all footage, selecting the best shots and organizing everything into a structured workflow. This critical preparation stage ensures efficient editing and helps identify any additional assets needed.</p>
-            </div>
-          </div>
-          
-          <!-- Step 3 -->
-          <div class="timeline-item wow fadeInUp" data-wow-delay="0.5s">
-            <div class="timeline-dot"></div>
-            <div class="timeline-content">
-              <h4 class="mb-3">3. First Cut Assembly</h4>
-              <p class="mb-0">Creating the initial structure of your video, establishing pacing, storytelling rhythm, and overall flow. This rough cut gives you the first glimpse of how your final video will unfold.</p>
-            </div>
-          </div>
-          
-          <!-- Step 4 -->
-          <div class="timeline-item wow fadeInUp" data-wow-delay="0.7s">
-            <div class="timeline-dot"></div>
-            <div class="timeline-content">
-              <h4 class="mb-3">4. Refinement & Enhancement</h4>
-              <p class="mb-0">Based on your feedback, we refine the edit while adding motion graphics, visual effects, color grading, and sound design to elevate the video. This is where the magic happens as your video transforms.</p>
-            </div>
-          </div>
-          
-          <!-- Step 5 -->
-          <div class="timeline-item wow fadeInUp" data-wow-delay="0.9s">
-            <div class="timeline-dot"></div>
-            <div class="timeline-content">
-              <h4 class="mb-3">5. Final Review & Delivery</h4>
-              <p class="mb-0">After final revisions and polishing, we deliver your video in all required formats optimized for each platform's specifications. We also provide guidance on optimal publishing strategies to maximize impact.</p>
-            </div>
+        <div class="col-md-6 col-lg-3 wow fadeInUp" data-wow-delay="0.3s">
+          <div class="counter-box fade-up delay-1">
+            <div class="counter-value" data-toggle="counter-up">50</div>
+            <div class="counter-title">Million+ Views</div>
           </div>
         </div>
-      </div>
-    </div>
-
-    <!-- Feature Start -->
-    <div
-      class="container-fluid bg-light overflow-hidden my-5 px-lg-0"
-      id="about"
-    >
-      <div class="container feature px-lg-0">
-        <div class="row g-0 mx-lg-0">
-          <!-- Left Column: Text Content -->
-          <div
-            class="col-lg-6 feature-text py-5 wow fadeIn"
-            data-wow-delay="0.5s"
-          >
-            <div class="p-lg-5 ps-lg-0">
-              <div class="section-title text-start">
-                <h1 class="display-5 mb-4">Why Choose Us</h1>
-              </div>
-              <p class="mb-4 pb-2">
-                With expertise in both viral short-form content and cinematic long-form videos, we deliver 
-                exceptional results tailored to your specific needs and platform requirements:
-              </p>
-              <div class="row g-4">
-                <!-- Platform Expertise -->
-                <div class="col-6">
-                  <div
-                    class="d-flex align-items-center p-3 bg-white rounded shadow-sm hover-effect"
-                  >
-                    <div
-                      class="icon-wrapper bg-gradient-primary rounded-circle flex-shrink-0 me-3"
-                    >
-                      <i class="fa fa-check fa-2x text-white"></i>
+  <!-- Feature Start -->
+  <!-- <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="card h-100 text-center p-4 border-0 shadow-sm hover-effect">
+                        <div class="icon-wrapper bg-gradient-primary rounded-circle mx-auto mb-3">
+                            <i class="fa fa-user-check fa-2x text-white"></i>
+                        </div>
+                        <h2 class="display-4 text-gradient-primary mb-3">01</h2>
+                        <h5 class="fw-bold mb-0">Creative Designers</h5>
+                        <p class="text-muted mt-2">Our team of designers brings your ideas to life with creativity and precision.</p>
                     </div>
-                    <div>
-                      <p class="mb-1 fw-medium">Platform</p>
-                      <h5 class="mb-0">Expertise</h5>
-                    </div>
-                  </div>
                 </div>
-
-                <!-- Creative Style -->
-                <div class="col-6">
-                  <div
-                    class="d-flex align-items-center p-3 bg-white rounded shadow-sm hover-effect"
-                  >
-                    <div
-                      class="icon-wrapper bg-gradient-success rounded-circle flex-shrink-0 me-3"
-                    >
-                      <i class="fa fa-star fa-2x text-white"></i>
-                    </div>
-                    <div>
-                      <p class="mb-1 fw-medium">Creative</p>
-                      <h5 class="mb-0">Style</h5>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Quick Turnaround -->
-                <div class="col-6">
-                  <div
-                    class="d-flex align-items-center p-3 bg-white rounded shadow-sm hover-effect"
-                  >
-                    <div
-                      class="icon-wrapper bg-gradient-warning rounded-circle flex-shrink-0 me-3"
-                    >
-                      <i class="fa fa-bolt fa-2x text-white"></i>
-                    </div>
-                    <div>
-                      <p class="mb-1 fw-medium">Quick</p>
-                      <h5 class="mb-0">Turnaround</h5>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Proven Results -->
-                <div class="col-6">
-                  <div
-                    class="d-flex align-items-center p-3 bg-white rounded shadow-sm hover-effect"
-                  >
-                    <div
-                      class="icon-wrapper bg-gradient-info rounded-circle flex-shrink-0 me-3"
-                    >
-                      <i class="fa fa-chart-line fa-2x text-white"></i>
-                    </div>
-                    <div>
-                      <p class="mb-1 fw-medium">Proven</p>
-                      <h5 class="mb-0">Results</h5>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Right Column: Image -->
-          <div class="col-lg-6 pe-lg-0" style="min-height: 400px">
-            <div class="position-relative h-100">
-              <img
-                class="position-absolute img-fluid w-100 h-100"
-                src="img/video-editor-working.jpg"
-                style="object-fit: cover"
-                alt="Video Editor Working"
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Feature End -->
-
-    <!-- Quote Start -->
-    <div
-      class="container-fluid bg-light overflow-hidden my-5 px-lg-0"
-      id="contact"
-    >
-      <div class="container quote px-lg-0">
-        <div class="row g-0 mx-lg-0">
-          <div class="col-lg-6 ps-lg-0" style="min-height: 400px">
-            <div class="position-relative h-100">
-              <img
-                class="position-absolute img-fluid w-100 h-100"
-                src="img/video-contact.jpg"
-                style="object-fit: cover"
-                alt=""
-              />
-            </div>
-          </div>
-          <div class="col-lg-6 quote-text py-5">
-            <div class="p-lg-5 pe-lg-0">
-              <div class="section-title text-start">
-                <h1 class="display-5 mb-4">Ready to Create Something Amazing?</h1>
-              </div>
-              <p class="mb-4 pb-2">
-                Let's transform your footage into engaging, high-quality content that stands out and gets results. 
-                Whether you need viral short-form videos or cinematic long-form content, we're here to bring your vision to life.
-              </p>
-              <form id="contact-form">
-                <div class="row g-3">
-                  <div class="col-12 col-sm-6">
-                    <input
-                      type="text"
-                      name="user_name"
-                      class="form-control border-0"
-                      placeholder="Your Name"
-                      style="height: 55px"
-                      required
-                    />
-                  </div>
-                  <div class="col-12 col-sm-6">
-                    <input
-                      type="email"
-                      name="email"
-                      class="form-control border-0"
-                      placeholder="Your Email"
-                      style="height: 55px"
-                      required
-                    />
-                  </div>
-                  <div class="col-12 col-sm-6">
-                    <input
-                      type="text"
-                      name="phone_number"
-                      class="form-control border-0"
-                      placeholder="Your Mobile"
-                      style="height: 55px"
-                      required
-                    />
-                  </div>
-                  <div class="col-12 col-sm-6">
-                    <select
-                      name="service"
-                      class="form-select border-0"
-                      style="height: 55px"
-                      required
-                    >
-                      <option value="" selected disabled>
-                        Select A Service
-                      </option>
-                      <option value="Short-Form Content">Short-Form Content</option>
-                      <option value="Long-Form Content">
-                        Long-Form Content
-                      </option>
-                      <option value="Documentary Editing">Documentary Editing</option>
-                      <option value="Motion Graphics">Motion Graphics & VFX</option>
-                      <option value="Color Grading">Color Grading</option>
-                      <option value="Sound Design">Sound Design</option>
-                      <option value="Content Repurposing">Content Repurposing</option>
-                      <option value="Full Production">
-                        Full Production Package
-                      </option>
-                    </select>
-                  </div>
-                  <div class="col-12">
-                    <textarea
-                      name="message"
-                      class="form-control border-0"
-                      placeholder="Tell us about your project"
-                      required
-                    ></textarea>
-                  </div>
-                  <div class="col-12">
-                    <button class="btn btn-primary w-100 py-3" type="submit">
-                      Get a Free Quote
-                    </button>
-                  </div>
-                </div>
-              </form>
-              <div id="success-message" class="alert alert-success mt-3 d-none">
-                Message sent successfully!
-              </div>
-              <div id="failure-message" class="alert alert-danger mt-3 d-none">
-                Failed to send message. Please try again.
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Quote End -->
-
-    <!-- Footer Start -->
-    <div
-      class="container-fluid bg-dark text-light footer mt-5 pt-5 wow fadeIn"
-      data-wow-delay="0.1s"
-    >
-      <div class="container py-5">
-        <div class="row g-5">
-          <div class="col-lg-3 col-md-6">
-            <h4 class="text-light mb-4">Contact Us</h4>
-            <p class="mb-2">
-              <i class="fa fa-map-marker-alt me-3"></i>4 kilo, Addis Ababa,
-              Ethiopia
-            </p>
-            <p class="mb-2">
-              <i class="fa fa-phone-alt me-3"></i><a href="tel:+251951207168" class="telephone">+251938972402 </a>
-            </p>
-            <p class="mb-2">
-              <i class="fa fa-envelope me-3"></i><a href="mailto:ikimtechco@gmail.com" class="telephone">viralcut@studio.com</a>
-            </p>
-            <div class="d-flex pt-2">
-              <a class="btn btn-outline-light btn-social" href="https://www.instagram.com/viralcutstudio/" target="_blank"
-                ><i class="fab fa-instagram"></i
-              ></a>
-              <a class="btn btn-outline-light btn-social" href="https://www.tiktok.com/@viralcutstudio" target="_blank"
-                ><i class="fa-brands fa-tiktok"></i
-              ></a>
-              <a class="btn btn-outline-light btn-social" href="https://youtube.com/viralcutstudio" target="_blank"
-                ><i class="fab fa-youtube"></i
-              ></a>
-              <a class="btn btn-outline-light btn-social" href="https://facebook.com/viralcutstudio" target="_blank"
-                ><i class="fab fa-facebook"></i
-              ></a>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <h4 class="text-light mb-4">Services</h4>
-            <a class="btn btn-link" href="#services">Short-Form Content</a>
-            <a class="btn btn-link" href="#services">Long-Form Content</a>
-            <a class="btn btn-link" href="#services">Documentary Editing</a>
-            <a class="btn btn-link" href="#services">Motion Graphics</a>
-            <a class="btn btn-link" href="#services">Color Grading</a>
-            <a class="btn btn-link" href="#services">Sound Design</a>
-            <a class="btn btn-link" href="#services">Content Repurposing</a>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <h4 class="text-light mb-4">Quick Links</h4>
-            <a class="btn btn-link" href="#about">About Us</a>
-            <a class="btn btn-link" href="#contact">Contact Us</a>
-            <a class="btn btn-link" href="#services">Our Services</a>
-            <a class="btn btn-link" href="#portfolio">Portfolio</a>
-            <a class="btn btn-link" href="#viral-videos">Viral Work</a>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <h4 class="text-light mb-4">Platforms We Optimize For</h4>
-            <div class="d-flex flex-column">
-              <a class="btn btn-link" href="#"><i class="fab fa-instagram me-2"></i> Instagram Reels</a>
-              <a class="btn btn-link" href="#"><i class="fab fa-tiktok me-2"></i> TikTok</a>
-              <a class="btn btn-link" href="#"><i class="fab fa-youtube me-2"></i> YouTube Shorts</a>
-              <a class="btn btn-link" href="#"><i class="fab fa-youtube me-2"></i> YouTube Long-form</a>
-              <a class="btn btn-link" href="#"><i class="fab fa-facebook me-2"></i> Facebook Reels</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="container">
-        <div class="copyright">
-          <div class="row">
-            <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-              &copy; <a class="border-bottom" href="#">ViralCut Studio</a> All
-              Right Reserved.
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Footer End -->
-
-    <!-- Back to Top -->
-    <a
-      href="#"
-      class="btn btn-lg btn-primary btn-lg-square rounded-0 back-to-top"
-      ><i class="bi bi-arrow-up"></i
-    ></a>
-
-    <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/wow/wow.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/counterup/counterup.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="lib/isotope/isotope.pkgd.min.js"></script>
-    <script src="lib/lightbox/js/lightbox.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-    <script src="script.js"></script>
-    <script src="js/main.js"></script>
     
-    <script>
-      function filterProjects(category) {
-        const items = document.querySelectorAll(".project-item");
-        items.forEach((item) => {
-          if (category === "all" || item.classList.contains(category)) {
-            item.style.display = "block";
-          } else {
-            item.style.display = "none";
-          }
-        });
-      }
-      
-      // Animation for elements when they enter viewport
-      const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('visible');
-          }
-        });
-      }, {threshold: 0.1});
-      
-      document.addEventListener('DOMContentLoaded', function() {
-        // Observe animation elements
-        document.querySelectorAll('.animation-fade-in').forEach(el => {
-          observer.observe(el);
-        });
-        
-        // Add pause/play functionality to video modals
-        $('.modal').on('hidden.bs.modal', function () {
-          var src = $(this).find('iframe').attr('src');
-          $(this).find('iframe').attr('src', '');
-          $(this).find('iframe').attr('src', src);
-        });
+                <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay="0.3s">
+                    <div class="card h-100 text-center p-4 border-0 shadow-sm hover-effect">
+                        <div class="icon-wrapper bg-gradient-success rounded-circle mx-auto mb-3">
+                            <i class="fa fa-check fa-2x text-white"></i>
+                        </div>
+                        <h2 class="display-4 text-gradient-success mb-3">02</h2>
+                        <h5 class="fw-bold mb-0">Quality Products</h5>
+                        <p class="text-muted mt-2">We deliver high-quality products that meet your expectations and beyond.</p>
+                    </div>
+                </div>
+    
+                <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay="0.5s">
+                    <div class="card h-100 text-center p-4 border-0 shadow-sm hover-effect">
+                        <div class="icon-wrapper bg-gradient-warning rounded-circle mx-auto mb-3">
+                            <i class="fa fa-drafting-compass fa-2x text-white"></i>
+                        </div>
+                        <h2 class="display-4 text-gradient-warning mb-3">03</h2>
+                        <h5 class="fw-bold mb-0">Free Consultation</h5>
+                        <p class="text-muted mt-2">Get expert advice and guidance with our free consultation service.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+  <!-- Feature Start -->
+
+  <!-- About Start -->
+  <!-- <div class="container-fluid bg-light overflow-hidden my-5 px-lg-0">
+        <div class="container about px-lg-0">
+            <div class="row g-0 mx-lg-0">
+                <div class="col-lg-6 ps-lg-0" style="min-height: 400px;">
+                    <div class="position-relative h-100">
+                        <img class="position-absolute img-fluid w-100 h-100" src="img/about.jpg" style="object-fit: cover;" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-6 about-text py-5 wow fadeIn" data-wow-delay="0.5s">
+                    <div class="p-lg-5 pe-lg-0">
+                        <div class="section-title text-start">
+                            <h1 class="display-5 mb-4">About Us</h1>
+                        </div>
+                        <p class="mb-4 pb-2">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo erat amet</p>
+                        <div class="row g-4 mb-4 pb-2">
+                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.1s">
+                                <div class="d-flex align-items-center">
+                                    <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-white" style="width: 60px; height: 60px;">
+                                        <i class="fa fa-users fa-2x text-primary"></i>
+                                    </div>
+                                    <div class="ms-3">
+                                        <h2 class="text-primary mb-1" data-toggle="counter-up">1234</h2>
+                                        <p class="fw-medium mb-0">Happy Clients</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.3s">
+                                <div class="d-flex align-items-center">
+                                    <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-white" style="width: 60px; height: 60px;">
+                                        <i class="fa fa-check fa-2x text-primary"></i>
+                                    </div>
+                                    <div class="ms-3">
+                                        <h2 class="text-primary mb-1" data-toggle="counter-up">1234</h2>
+                                        <p class="fw-medium mb-0">Projects Done</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="" class="btn btn-primary py-3 px-5">Explore More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+  <!-- About End -->
+
+  <!-- Service Start -->
+  <div class="container-xxl py-5" id="services">
+    <div class="container">
+      <div class="section-title text-center">
+        <h1 class="display-5 mb-5">Our Services</h1>
+      </div>
+      <div class="row g-4">
+        <!-- Web Development -->
+        <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
+          <div class="service-item text-center p-4 border border-2 border-light rounded hover-effect">
+            <div class="icon-wrapper bg-gradient-primary rounded-circle mx-auto mb-3">
+              <i class="fa fa-code fa-2x text-white"></i>
+            </div>
+            <h4 class="mb-3">Web Development</h4>
+            <p>
+              Build user-friendly websites that work seamlessly on all
+              devices. Create intuitive designs that enhance user experience
+              and engagement.
+            </p>
+          </div>
+        </div>
+
+        <!-- Mobile Development -->
+        <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
+          <div class="service-item text-center p-4 border border-2 border-light rounded hover-effect">
+            <div class="icon-wrapper bg-gradient-success rounded-circle mx-auto mb-3">
+              <i class="fa fa-mobile-alt fa-2x text-white"></i>
+            </div>
+            <h4 class="mb-3">Mobile App Development</h4>
+            <p>
+              Custom iOS and Android applications tailored to your business
+              needs, along with efficient cross-platform solutions.
+            </p>
+          </div>
+        </div>
+
+        <!-- UI/UX Design -->
+        <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
+          <div class="service-item text-center p-4 border border-2 border-light rounded hover-effect">
+            <div class="icon-wrapper bg-gradient-warning rounded-circle mx-auto mb-3">
+              <i class="fa fa-pencil-ruler fa-2x text-white"></i>
+            </div>
+            <h4 class="mb-3">UI/UX Design</h4>
+            <p>
+              Emphasizing user-centric design to create intuitive interfaces,
+              along with prototyping and wireframing to visualize and test
+              concepts.
+            </p>
+          </div>
+        </div>
+
+        <!-- Web Hosting -->
+        <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
+          <div class="service-item text-center p-4 border border-2 border-light rounded hover-effect">
+            <div class="icon-wrapper bg-gradient-info rounded-circle mx-auto mb-3">
+              <i class="fa fa-server fa-2x text-white"></i>
+            </div>
+            <h4 class="mb-3">Web Hosting</h4>
+            <p>
+              Ensures that your website is accessible to users, allowing
+              businesses and individuals to establish their online presence
+              easily.
+            </p>
+          </div>
+        </div>
+
+        <!-- Graphics Design -->
+        <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
+          <div class="service-item text-center p-4 border border-2 border-light rounded hover-effect">
+            <div class="icon-wrapper bg-gradient-danger rounded-circle mx-auto mb-3">
+              <i class="fa fa-palette fa-2x text-white"></i>
+            </div>
+            <h4 class="mb-3">Graphics Design</h4>
+            <p>
+              Creating logos, branding assets, and digital visuals for
+              websites and social media by merging artistic flair with
+              technical expertise.
+            </p>
+          </div>
+        </div>
+
+        <!-- Printing -->
+        <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
+          <div class="service-item text-center p-4 border border-2 border-light rounded hover-effect">
+            <div class="icon-wrapper bg-gradient-secondary rounded-circle mx-auto mb-3">
+              <i class="fa fa-print fa-2x text-white"></i>
+            </div>
+            <h4 class="mb-3">Printing</h4>
+            <p>
+              Our printing design service specializes in creating high-quality
+              graphics for print media like brochures, business cards, and
+              posters.
+            </p>
+          </div>
+        </div>
+
+        <!-- 3D Designing -->
+        <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
+          <div class="service-item text-center p-4 border border-2 border-light rounded hover-effect">
+            <div class="icon-wrapper bg-gradient-purple rounded-circle mx-auto mb-3">
+              <i class="fa fa-cube fa-2x text-white"></i>
+            </div>
+            <h4 class="mb-3">3D Designing</h4>
+            <p>
+              Offers innovative solutions for creating detailed
+              three-dimensional models and visualizations. Whether for product
+              design, architectural visualization, or animation.
+            </p>
+          </div>
+        </div>
+
+        <!-- Video Editing -->
+        <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
+          <div class="service-item text-center p-4 border border-2 border-light rounded hover-effect">
+            <div class="icon-wrapper bg-gradient-pink rounded-circle mx-auto mb-3">
+              <i class="fa fa-video fa-2x text-white"></i>
+            </div>
+            <h4 class="mb-3">Video Editing</h4>
+            <p>
+              Transforms raw footage into polished, engaging content. We
+              specialize in creating captivating videos for promotional
+              materials, social media, events, and more.
+            </p>
+          </div>
+        </div>
+
+        <!-- Market Consultancy -->
+        <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.7s">
+          <div class="service-item text-center p-4 border border-2 border-light rounded hover-effect">
+            <div class="icon-wrapper bg-gradient-teal rounded-circle mx-auto mb-3">
+              <i class="fa fa-chart-line fa-2x text-white"></i>
+            </div>
+            <h4 class="mb-3">Market Consultancy</h4>
+            <p>
+              Expert analysis and strategic insights to help businesses
+              understand market trends, identify opportunities, and make
+              data-driven decisions for growth and success.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Service End -->
+
+  <!-- Feature Start -->
+  <div class="container-fluid bg-light overflow-hidden my-5 px-lg-0" id="about">
+    <div class="container feature px-lg-0">
+      <div class="row g-0 mx-lg-0">
+        <!-- Left Column: Text Content -->
+        <div class="col-lg-6 feature-text py-5 wow fadeIn" data-wow-delay="0.5s">
+          <div class="p-lg-5 ps-lg-0">
+            <div class="section-title text-start">
+              <h1 class="display-5 mb-4">Why Choose Us</h1>
+            </div>
+            <p class="mb-4 pb-2">
+              At IKIM Tech, we combine innovation, expertise, and dedication
+              to deliver exceptional results. Here's why we stand out:
+            </p>
+            <div class="row g-4">
+              <!-- Quality Services -->
+              <div class="col-6">
+                <div class="d-flex align-items-center p-3 bg-white rounded shadow-sm hover-effect">
+                  <div class="icon-wrapper bg-gradient-primary rounded-circle flex-shrink-0 me-3">
+                    <i class="fa fa-check fa-2x text-white"></i>
+                  </div>
+                  <div>
+                    <p class="mb-1 fw-medium">Quality</p>
+                    <h5 class="mb-0">Services</h5>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Creative Designers -->
+              <div class="col-6">
+                <div class="d-flex align-items-center p-3 bg-white rounded shadow-sm hover-effect">
+                  <div class="icon-wrapper bg-gradient-success rounded-circle flex-shrink-0 me-3">
+                    <i class="fa fa-user-check fa-2x text-white"></i>
+                  </div>
+                  <div>
+                    <p class="mb-1 fw-medium">Creative</p>
+                    <h5 class="mb-0">Designers</h5>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Free Consultation -->
+              <div class="col-6">
+                <div class="d-flex align-items-center p-3 bg-white rounded shadow-sm hover-effect">
+                  <div class="icon-wrapper bg-gradient-warning rounded-circle flex-shrink-0 me-3">
+                    <i class="fa fa-drafting-compass fa-2x text-white"></i>
+                  </div>
+                  <div>
+                    <p class="mb-1 fw-medium">Free</p>
+                    <h5 class="mb-0">Consultation</h5>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Customer Support -->
+              <div class="col-6">
+                <div class="d-flex align-items-center p-3 bg-white rounded shadow-sm hover-effect">
+                  <div class="icon-wrapper bg-gradient-info rounded-circle flex-shrink-0 me-3">
+                    <i class="fa fa-headphones fa-2x text-white"></i>
+                  </div>
+                  <div>
+                    <p class="mb-1 fw-medium">Customer</p>
+                    <h5 class="mb-0">Support</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column: Image -->
+        <div class="col-lg-6 pe-lg-0" style="min-height: 400px">
+          <div class="position-relative h-100">
+            <img class="position-absolute img-fluid w-100 h-100" src="img/pexels-cottonbro-6153343.jpg"
+              style="object-fit: cover" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Feature End -->
+
+  <!-- Projects Start -->
+  <div class="container-xxl py-5" id="projects">
+    <div class="container">
+      <div class="section-title text-center">
+        <h1 class="display-5 mb-5">Our Projects</h1>
+        <p class="fs-5 text-muted mb-5">
+          Explore some of our recent work and see how we bring ideas to life.
+        </p>
+      </div>
+
+      <!-- Filter Buttons -->
+      <div class="text-center mb-4">
+        <button class="btn btn-outline-primary" onclick="filterProjects('all')">
+          All
+        </button>
+        <button class="btn btn-outline-primary" onclick="filterProjects('web')">
+          Web
+        </button>
+        <button class="btn btn-outline-primary" onclick="filterProjects('mobile')">
+          Mobile
+        </button>
+        <button class="btn btn-outline-primary" onclick="filterProjects('logo')">
+          Logo
+        </button>
+        <button class="btn btn-outline-primary" onclick="filterProjects('others')">
+          Others
+        </button>
+      </div>
+
+      <div class="row g-4" id="projectGrid">
+        <!-- Project 1 -->
+        <div class="col-lg-4 col-md-6 project-item web wow fadeInUp" data-wow-delay="0.1s">
+          <div class="project-card">
+            <div class="project-image">
+              <img class="img-fluid proj-image" src="img/projects/Nawla.jpg" alt="Project 1" />
+              <div class="project-overlay">
+                <a class="btn btn-primary btn-sm" href="img/projects/Nawla.jpg" data-lightbox="portfolio">
+                  <i class="fa fa-eye"></i> View
+                </a>
+                <a class="btn btn-light btn-sm" href="#">
+                  <i class="fa fa-link"></i> Details
+                </a>
+              </div>
+            </div>
+            <div class="project-content p-4">
+              <h5 class="mb-2">Nawla Trading PLC</h5>
+              <p class="text-muted mb-0">
+                This Nawla Trading website showcases products and services
+                with a clean, responsive design.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="col-lg-4 col-md-6 project-item web wow fadeInUp" data-wow-delay="0.3s">
+          <div class="project-card">
+            <div class="project-image">
+              <img class="img-fluid proj-image" src="img/projects/gojo.jpg" alt="Project 2" />
+              <div class="project-overlay">
+                <a class="btn btn-primary btn-sm" href="img/projects/gojo.jpg" data-lightbox="portfolio">
+                  <i class="fa fa-eye"></i> View
+                </a>
+                <a class="btn btn-light btn-sm" href="#">
+                  <i class="fa fa-link"></i> Details
+                </a>
+              </div>
+            </div>
+            <div class="project-content p-4">
+              <h5 class="mb-2">Gojo Guest House</h5>
+              <p class="text-muted mb-0">
+                This guesthouse website highlights services, room options, and
+                amenities.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="col-lg-4 col-md-6 project-item web wow fadeInUp" data-wow-delay="0.5s">
+          <div class="project-card">
+            <div class="project-image">
+              <img class="img-fluid proj-image" src="img/projects/Brand.png" alt="Project 3" />
+              <div class="project-overlay">
+                <a class="btn btn-primary btn-sm" href="img/projects/Brand.png" data-lightbox="portfolio">
+                  <i class="fa fa-eye"></i> View
+                </a>
+                <a class="btn btn-light btn-sm" href="#">
+                  <i class="fa fa-link"></i> Details
+                </a>
+              </div>
+            </div>
+            <div class="project-content p-4">
+              <h5 class="mb-2">Brand Clothing</h5>
+              <p class="text-muted mb-0">
+                Brand Clothing brings you timeless fashion with a modern
+                touch.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 project-item web wow fadeInUp" data-wow-delay="0.1s">
+          <div class="project-card">
+            <div class="project-image">
+              <img class="img-fluid proj-image" src="img/projects/photo_2025-01-29_00-49-54.jpg" alt="Project 1" />
+              <div class="project-overlay">
+                <a class="btn btn-primary btn-sm" href="img/projects/photo_2025-01-29_00-49-54.jpg"
+                  data-lightbox="portfolio">
+                  <i class="fa fa-eye"></i> View
+                </a>
+                <a class="btn btn-light btn-sm" href="#">
+                  <i class="fa fa-link"></i> Details
+                </a>
+              </div>
+            </div>
+            <div class="project-content p-4">
+              <h5 class="mb-2">Heiver Tech</h5>
+              <p class="text-muted mb-0">
+                Provides various technology services and is globally
+                recognized for its outstanding innovations, cutting-edge
+                solutions, and commitment to excellence in the tech industry.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="col-lg-4 col-md-6 project-item web wow fadeInUp" data-wow-delay="0.3s">
+          <div class="project-card">
+            <div class="project-image">
+              <img class="img-fluid proj-image" src="img/projects/photo_2025-01-29_00-49-57.jpg" alt="Project 2" />
+              <div class="project-overlay">
+                <a class="btn btn-primary btn-sm" href="img/projects/photo_2025-01-29_00-49-57.jpg"
+                  data-lightbox="portfolio">
+                  <i class="fa fa-eye"></i> View
+                </a>
+                <a class="btn btn-light btn-sm" href="#">
+                  <i class="fa fa-link"></i> Details
+                </a>
+              </div>
+            </div>
+            <div class="project-content p-4">
+              <h5 class="mb-2">ነጋሪት Marketing Agency</h5>
+              <p class="text-muted mb-0">
+                Offers a wide range of digital services, striving to modernize
+                the world by providing innovative and effective marketing
+                solutions.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="col-lg-4 col-md-6 project-item web wow fadeInUp" data-wow-delay="0.5s">
+          <div class="project-card">
+            <div class="project-image">
+              <img class="img-fluid proj-image" src="img/projects/photo_2025-01-29_00-50-03.jpg" alt="Project 3" />
+              <div class="project-overlay">
+                <a class="btn btn-primary btn-sm" href="img/projects/photo_2025-01-29_00-50-03.jpg"
+                  data-lightbox="portfolio">
+                  <i class="fa fa-eye"></i> View
+                </a>
+                <a class="btn btn-light btn-sm" href="#">
+                  <i class="fa fa-link"></i> Details
+                </a>
+              </div>
+            </div>
+            <div class="project-content p-4">
+              <h5 class="mb-2">Adape Leather Design</h5>
+              <p class="text-muted mb-0">
+                Specializes in crafting a variety of high-quality leather
+                products, delighting clients with beautiful and expertly
+                handcrafted designs.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="col-lg-4 col-md-6 project-item mobile wow fadeInUp" data-wow-delay="0.1s">
+          <div class="project-card">
+            <div class="project-image">
+              <img class="img-fluid proj-image" src="img/projects/sho.jpg" alt="Project 4" />
+              <div class="project-overlay">
+                <a class="btn btn-primary btn-sm" href="img/projects/sho.jpg" data-lightbox="portfolio">
+                  <i class="fa fa-eye"></i> View
+                </a>
+                <a class="btn btn-light btn-sm" href="#">
+                  <i class="fa fa-link"></i> Details
+                </a>
+              </div>
+            </div>
+            <div class="project-content p-4">
+              <h5 class="mb-2">ShoeIT</h5>
+              <p class="text-muted mb-0">
+                This mobile app is dedicated to shoe sales, offering a clean,
+                user-friendly design. It features easy navigation,
+                comprehensive product details, and a visually appealing layout
+                that enhances the shopping experience.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 5 -->
+        <div class="col-lg-4 col-md-6 project-item logo wow fadeInUp" data-wow-delay="0.3s">
+          <div class="project-card">
+            <div class="project-image">
+              <img class="img-fluid proj-image" src="img/projects/gojoHouse.jpg" alt="Project 5" />
+              <div class="project-overlay">
+                <a class="btn btn-primary btn-sm" href="img/projects/gojoHouse.jpg" data-lightbox="portfolio">
+                  <i class="fa fa-eye"></i> View
+                </a>
+                <a class="btn btn-light btn-sm" href="#">
+                  <i class="fa fa-link"></i> Details
+                </a>
+              </div>
+            </div>
+            <div class="project-content p-4">
+              <h5 class="mb-2">Gojo Guest House</h5>
+              <p class="text-muted mb-0">
+                A logo for a guesthouse that gives different kinds of services,
+                showcasing versatility and professionalism.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 6 -->
+        <div class="col-lg-4 col-md-6 project-item logo wow fadeInUp" data-wow-delay="0.5s">
+          <div class="project-card">
+            <div class="project-image">
+              <img class="img-fluid proj-image" src="img/projects/ybShopping.jpg" alt="Project 6" />
+              <div class="project-overlay">
+                <a class="btn btn-primary btn-sm" href="img/projects/ybShopping.jpg" data-lightbox="portfolio">
+                  <i class="fa fa-eye"></i> View
+                </a>
+                <a class="btn btn-light btn-sm" href="#">
+                  <i class="fa fa-link"></i> Details
+                </a>
+              </div>
+            </div>
+            <div class="project-content p-4">
+              <h5 class="mb-2">Habesha Crowd</h5>
+              <p class="text-muted mb-0">
+                A logo for a company that provides various services, showcasing versatility
+                and professionalism.
+
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 project-item logo wow fadeInUp" data-wow-delay="0.5s">
+          <div class="project-card">
+            <div class="project-image">
+              <img class="img-fluid proj-image" src="img/projects/Eromica.jpg" alt="Project 6" />
+              <div class="project-overlay">
+                <a class="btn btn-primary btn-sm" href="img/projects/Eromica.jpg" data-lightbox="portfolio">
+                  <i class="fa fa-eye"></i> View
+                </a>
+                <a class="btn btn-light btn-sm" href="#">
+                  <i class="fa fa-link"></i> Details
+                </a>
+              </div>
+            </div>
+            <div class="project-content p-4">
+              <h5 class="mb-2">Eromica</h5>
+              <p class="text-muted mb-0">
+                A logo for a woman that is represented by E= Ethiopia, Romi=
+                roman (name of the woman), ca= comes from the last word Africa
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 project-item logo wow fadeInUp" data-wow-delay="0.5s">
+          <div class="project-card">
+            <div class="project-image">
+              <img class="img-fluid proj-image" src="img/projects/gamerSami.jpg" alt="Project 6" />
+              <div class="project-overlay">
+                <a class="btn btn-primary btn-sm" href="img/projects/gamerSami.jpg" data-lightbox="portfolio">
+                  <i class="fa fa-eye"></i> View
+                </a>
+                <a class="btn btn-light btn-sm" href="#">
+                  <i class="fa fa-link"></i> Details
+                </a>
+              </div>
+            </div>
+            <div class="project-content p-4">
+              <h5 class="mb-2">ነጋሪት Marketing Agency</h5>
+              <p class="text-muted mb-0">
+                This one is the logo part for the marketing agency that provides innovative
+                and effective marketing solutions.
+              </p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-lg-4 col-md-6 project-item logo wow fadeInUp" data-wow-delay="0.5s">
+          <div class="project-card">
+            <div class="project-image">
+              <img class="img-fluid proj-image" src="img/projects/hanybeauty.jpg" alt="Project 6" />
+              <div class="project-overlay">
+                <a class="btn btn-primary btn-sm" href="img/projects/hanybeauty.jpg" data-lightbox="portfolio">
+                  <i class="fa fa-eye"></i> View
+                </a>
+                <a class="btn btn-light btn-sm" href="#">
+                  <i class="fa fa-link"></i> Details
+                </a>
+              </div>
+            </div>
+            <div class="project-content p-4">
+              <h5 class="mb-2">Hany Beauty</h5>
+              <p class="text-muted mb-0">
+                A logo for a beauty salon that provides various services, showcasing versatility
+                and professionalism.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 project-item logo wow fadeInUp" data-wow-delay="0.5s">
+          <div class="project-card">
+            <div class="project-image">
+              <img class="img-fluid proj-image" src="img/projects/yegna.jpg" alt="Project 6" />
+              <div class="project-overlay">
+                <a class="btn btn-primary btn-sm" href="img/projects/yegna.jpg" data-lightbox="portfolio">
+                  <i class="fa fa-eye"></i> View
+                </a>
+                <a class="btn btn-light btn-sm" href="#">
+                  <i class="fa fa-link"></i> Details
+                </a>
+              </div>
+            </div>
+            <div class="project-content p-4">
+              <h5 class="mb-2">Yegna Dirsha</h5>
+              <p class="text-muted mb-0">
+                A logo for a company that is worked for their youtube and
+                social media channels.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script>
+    function filterProjects(category) {
+      const items = document.querySelectorAll(".project-item");
+      items.forEach((item) => {
+        if (category === "all" || item.classList.contains(category)) {
+          item.style.display = "block";
+        } else {
+          item.style.display = "none";
+        }
       });
-    </script>
-  </body>
+    }
+  </script>
+  <!-- Projects End -->
+
+  <!-- Team Start -->
+  <div class="container-xxl py-5" id="team">
+    <div class="container">
+      <div class="section-title text-center">
+        <h1 class="display-5 mb-5">Team Members</h1>
+      </div>
+      <div class="row g-4">
+        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+          <div class="team-item">
+            <div class="overflow-hidden position-relative">
+              <img class="img-fluid proj-image" src="img/team/miki.jpg" alt="" />
+              <div class="team-social">
+                <a class="btn btn-square" href="https://www.instagram.com/mikienzo5" target="_blank"><i
+                    class="fab fa-instagram"></i></a>
+                <a class="btn btn-square" target="_blank"
+                  href="https://www.upwork.com/freelancers/~01c99b8429da7f52d3?mp_source=share"><i
+                    class="fa-solid fa-user"></i></a>
+                <a class="btn btn-square" href="https://t.me/Ikimt5" target="_blank"><i class="fab fa-telegram"></i></a>
+              </div>
+            </div>
+            <div class="text-center border border-5 border-light border-top-0 p-4">
+              <h5 class="mb-0">Mikiyas Taye</h5>
+              <small>CEO & Website Developer</small>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+          <div class="team-item">
+            <div class="overflow-hidden position-relative">
+              <img class="img-fluid proj-image" src="img/team/aman2.jpg" alt="" />
+              <div class="team-social">
+                <a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a>
+                <a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a>
+                <a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a>
+              </div>
+            </div>
+            <div class="text-center border border-5 border-light border-top-0 p-4">
+              <h5 class="mb-0">Amen Dereje</h5>
+              <small>Website Developer</small>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+          <div class="team-item">
+            <div class="overflow-hidden position-relative">
+              <img class="img-fluid proj-image" src="img/team/betse.jpg" alt="" />
+              <div class="team-social">
+                <a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a>
+                <a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a>
+                <a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a>
+              </div>
+            </div>
+            <div class="text-center border border-5 border-light border-top-0 p-4">
+              <h5 class="mb-0">Betselot Bezuayehu</h5>
+              <small>Software Developer</small>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+          <div class="team-item">
+            <div class="overflow-hidden position-relative">
+              <img class="img-fluid proj-image" src="img/team/Jecoliah.jpg" alt="" />
+              <div class="team-social">
+                <a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a>
+                <a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a>
+                <a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a>
+              </div>
+            </div>
+            <div class="text-center border border-5 border-light border-top-0 p-4">
+              <h5 class="mb-0">Jecoliah Menberu</h5>
+              <small>Sales Agent</small>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+          <div class="team-item">
+            <div class="overflow-hidden position-relative">
+              <img class="img-fluid proj-image" src="img/team/bisrat.jpg" alt="" />
+              <div class="team-social">
+                <a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a>
+                <a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a>
+                <a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a>
+              </div>
+            </div>
+            <div class="text-center border border-5 border-light border-top-0 p-4">
+              <h5 class="mb-0">Bisrat Kifle</h5>
+              <small>Graphics Designer and Video Editor </small>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+          <div class="team-item">
+            <div class="overflow-hidden position-relative">
+              <img class="img-fluid proj-image" src="img/team/tesfahun.jpg" alt="" />
+              <div class="team-social">
+                <a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a>
+                <a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a>
+                <a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a>
+              </div>
+            </div>
+            <div class="text-center border border-5 border-light border-top-0 p-4">
+              <h5 class="mb-0">Tesfahun Gibitan</h5>
+              <small>3D and VFX Artist</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+          <div class="team-item">
+            <div class="overflow-hidden position-relative">
+              <img class="img-fluid proj-image" src="img/team/userpic.jpg" alt="" />
+              <div class="team-social">
+                <a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a>
+                <a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a>
+                <a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a>
+              </div>
+            </div>
+            <div class="text-center border border-5 border-light border-top-0 p-4">
+              <h5 class="mb-0">Mikyas Seffi</h5>
+              <small>Marketing Consultant</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Team End -->
+  <!-- Quote Start -->
+  <div class="container-fluid bg-light overflow-hidden my-5 px-lg-0" id="contact">
+    <div class="container quote px-lg-0">
+      <div class="row g-0 mx-lg-0">
+        <div class="col-lg-6 ps-lg-0" style="min-height: 400px">
+          <div class="position-relative h-100">
+            <img class="position-absolute img-fluid w-100 h-100" src="img/mailWithHand.png" style="object-fit: cover"
+              alt="" />
+          </div>
+        </div>
+        <div class="col-lg-6 quote-text py-5">
+          <div class="p-lg-5 pe-lg-0">
+            <div class="section-title text-start">
+              <h1 class="display-5 mb-4">Let's Work</h1>
+            </div>
+            <p class="mb-4 pb-2">
+              We're excited to help bring your ideas to life! Whether you have
+              a project in mind or need assistance with your existing
+              applications, we're here to collaborate. Let's discuss how we
+              can contribute to your success.
+            </p>
+            <form id="contact-form">
+              <div class="row g-3">
+                <div class="col-12 col-sm-6">
+                  <input type="text" name="user_name" class="form-control border-0" placeholder="Your Name"
+                    style="height: 55px" required />
+                </div>
+                <div class="col-12 col-sm-6">
+                  <input type="email" name="email" class="form-control border-0" placeholder="Your Email"
+                    style="height: 55px" required />
+                </div>
+                <div class="col-12 col-sm-6">
+                  <input type="text" name="phone_number" class="form-control border-0" placeholder="Your Mobile"
+                    style="height: 55px" required />
+                </div>
+                <div class="col-12 col-sm-6">
+                  <select name="service" class="form-select border-0" style="height: 55px" required>
+                    <option value="" selected disabled>
+                      Select A Service
+                    </option>
+                    <option value="Web Development">Web Development</option>
+                    <option value="Mobile Development">
+                      Mobile Development
+                    </option>
+                    <option value="Web Hosting">Web Hosting</option>
+                    <option value="Graphics Design">Graphics Design</option>
+                    <option value="Logo Design">Logo Design</option>
+                    <option value="Printing">Printing</option>
+                    <option value="3D Designing">3D Designing</option>
+                    <option value="Video Editing">Video Editing</option>
+                    <option value="Consultation & Support">
+                      Consultation & Support
+                    </option>
+                  </select>
+                </div>
+                <div class="col-12">
+                  <textarea name="message" class="form-control border-0" placeholder="Special Note" required></textarea>
+                </div>
+                <div class="col-12">
+                  <button class="btn btn-primary w-100 py-3" type="submit">
+                    Submit
+                  </button>
+                </div>
+              </div>
+            </form>
+            <div id="success-message" class="alert alert-success mt-3 d-none">
+              Message sent successfully!
+            </div>
+            <div id="failure-message" class="alert alert-danger mt-3 d-none">
+              Failed to send message. Please try again.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Quote End -->
+  <!-- Testimonial Start -->
+  <!-- <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
+      <div class="container">
+        <div class="section-title text-center">
+          <h1 class="display-5 mb-5">Testimonial</h1>
+        </div>
+        <div class="owl-carousel testimonial-carousel">
+          <div class="testimonial-item text-center">
+            <img
+              class="img-fluid bg-light p-2 mx-auto mb-3"
+              src="img/testimonial-1.jpg"
+              style="width: 90px; height: 90px"
+            />
+            <div class="testimonial-text text-center p-4">
+              <p>
+                Clita clita tempor justo dolor ipsum amet kasd amet duo justo
+                duo duo labore sed sed. Magna ut diam sit et amet stet eos sed
+                clita erat magna elitr erat sit sit erat at rebum justo sea
+                clita.
+              </p>
+              <h5 class="mb-1">Client Name</h5>
+              <span class="fst-italic">Profession</span>
+            </div>
+          </div>
+          <div class="testimonial-item text-center">
+            <img
+              class="img-fluid bg-light p-2 mx-auto mb-3"
+              src="img/testimonial-2.jpg"
+              style="width: 90px; height: 90px"
+            />
+            <div class="testimonial-text text-center p-4">
+              <p>
+                Clita clita tempor justo dolor ipsum amet kasd amet duo justo
+                duo duo labore sed sed. Magna ut diam sit et amet stet eos sed
+                clita erat magna elitr erat sit sit erat at rebum justo sea
+                clita.
+              </p>
+              <h5 class="mb-1">Client Name</h5>
+              <span class="fst-italic">Profession</span>
+            </div>
+          </div>
+          <div class="testimonial-item text-center">
+            <img
+              class="img-fluid bg-light p-2 mx-auto mb-3"
+              src="img/testimonial-3.jpg"
+              style="width: 90px; height: 90px"
+            />
+            <div class="testimonial-text text-center p-4">
+              <p>
+                Clita clita tempor justo dolor ipsum amet kasd amet duo justo
+                duo duo labore sed sed. Magna ut diam sit et amet stet eos sed
+                clita erat magna elitr erat sit sit erat at rebum justo sea
+                clita.
+              </p>
+              <h5 class="mb-1">Client Name</h5>
+              <span class="fst-italic">Profession</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+  <!-- Testimonial End -->
+
+  <!-- Footer Start -->
+  <div class="container-fluid bg-dark text-light footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
+    <div class="container py-5">
+      <div class="row g-5">
+        <div class="col-lg-3 col-md-6">
+          <h4 class="text-light mb-4">Address</h4>
+          <p class="mb-2">
+            <i class="fa fa-map-marker-alt me-3"></i>4 kilo, Addis Ababa,
+            Ethiopia
+          </p>
+          <p class="mb-2">
+            <i class="fa fa-phone-alt me-3"></i><a href="tel:+251951207168" class="telephone">+251938972402 </a>
+          </p>
+          <p class="mb-2">
+            <i class="fa fa-envelope me-3"></i><a href="mailto:ikimtechco@gmail.com"
+              class="telephone">eyutechservices@mail.com</a>
+          </p>
+          <div class="d-flex pt-2">
+            <a class="btn btn-outline-light btn-social" href="https://www.instagram.com/ikimtechco/" target="_blank"><i
+                class="fab fa-instagram"></i></a>
+            <a class="btn btn-outline-light btn-social" href="https://www.tiktok.com/@ikimtech.co" target="_blank"><i
+                class="fa-brands fa-tiktok"></i></a>
+            <a class="btn btn-outline-light btn-social" href="https://wa.me/+251951207168" target="_blank"><i
+                class="fab fa-whatsapp"></i></a>
+            <a class="btn btn-outline-light btn-social" href="https://t.me/ikimtechco" target="_blank"><i
+                class="fab fa-telegram"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h4 class="text-light mb-4">Services</h4>
+          <a class="btn btn-link" href="#services">Web Development</a>
+          <a class="btn btn-link" href="#servives">Mobile Development</a>
+          <a class="btn btn-link" href="#servives">UI/UX Design</a>
+          <a class="btn btn-link" href="#servives">Graphics design</a>
+          <a class="btn btn-link" href="#servives">Printing</a>
+          <a class="btn btn-link" href="#servives">3D Designing</a>
+          <a class="btn btn-link" href="#servives">Video Editing</a>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h4 class="text-light mb-4">Quick Links</h4>
+          <a class="btn btn-link" href="#about">About Us</a>
+          <a class="btn btn-link" href="#contact">Contact Us</a>
+          <a class="btn btn-link" href="#services">Our Services</a>
+          <a class="btn btn-link" href="#projects">Our Project</a>
+          <a class="btn btn-link" href="#team">Teams</a>
+
+          <!-- <a class="btn btn-link" href="">Support</a> -->
+        </div>
+        <!-- <div class="col-lg-3 col-md-6">
+            <h4 class="text-light mb-4">Newsletter</h4>
+            <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
+            <div class="position-relative mx-auto" style="max-width: 400px">
+              <input
+                class="form-control border-0 w-100 py-3 ps-4 pe-5"
+                type="text"
+                placeholder="Your email"
+              />
+              <button
+                type="button"
+                class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2"
+              >
+                SignUp
+              </button>
+            </div>
+          </div> -->
+      </div>
+    </div>
+    <div class="container">
+      <div class="copyright">
+        <div class="row">
+          <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+            &copy; <a class="border-bottom" href="#">Unique Digitals</a> All
+            Right Reserved.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Footer End -->
+
+  <!-- Back to Top -->
+  <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-0 back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+  <!-- JavaScript Libraries -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/waypoints/waypoints.min.js"></script>
+  <script src="lib/counterup/counterup.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="lib/isotope/isotope.pkgd.min.js"></script>
+  <script src="lib/lightbox/js/lightbox.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script src="script.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
 </html>
