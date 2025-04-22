@@ -47,189 +47,6 @@ rel="stylesheet"
 
 <!-- Template Stylesheet -->
 <link href="css/style.css" rel="stylesheet" />
-    <style>
-      .carousel-image {
-        width: 100%; /* Ensure the image takes the full width of its container */
-        height: 1000px; /* Set a fixed height for all images */
-        object-fit: cover; /* Ensures the image covers the area without distortion */
-      }
-      .proj-image {
-        width: 100%; /* Ensure the image takes the full width of its container */
-        height: 350px; /* Set a fixed height for all images */
-        object-fit: cover; /* Ensures the image covers the area without distortion */
-      }
-      /* Gradient Background for Icons */
-      .bg-gradient-primary {
-        background: linear-gradient(45deg, #6a11cb, #2575fc);
-      }
-      .bg-gradient-success {
-        background: linear-gradient(45deg, #2ebf91, #8360c3);
-      }
-      .bg-gradient-warning {
-        background: linear-gradient(45deg, #f9d423, #ff4e50);
-      }
-
-      /* Icon Wrapper */
-      .icon-wrapper {
-        width: 80px;
-        height: 80px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-
-      /* Gradient Text for Numbers */
-      .text-gradient-primary {
-        background: linear-gradient(45deg, #6a11cb, #2575fc);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-      }
-      .text-gradient-success {
-        background: linear-gradient(45deg, #2ebf91, #8360c3);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-      }
-      .text-gradient-warning {
-        background: linear-gradient(45deg, #f9d423, #ff4e50);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-      }
-
-      /* Hover Effect */
-      .hover-effect {
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-      }
-      .hover-effect:hover {
-        transform: translateY(-10px);
-        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
-      }
-      /* Gradient Background for Icons */
-      .bg-gradient-primary {
-        background: linear-gradient(45deg, #6a11cb, #2575fc);
-      }
-      .bg-gradient-success {
-        background: linear-gradient(45deg, #2ebf91, #8360c3);
-      }
-      .bg-gradient-warning {
-        background: linear-gradient(45deg, #f9d423, #ff4e50);
-      }
-      .bg-gradient-info {
-        background: linear-gradient(45deg, #00c6fb, #005bea);
-      }
-      .bg-gradient-danger {
-        background: linear-gradient(45deg, #ff6b6b, #ffa5a5);
-      }
-      .bg-gradient-secondary {
-        background: linear-gradient(45deg, #6c757d, #adb5bd);
-      }
-      .bg-gradient-teal {
-        background: linear-gradient(45deg, #00b4db, #0083b0);
-      }
-      /* Icon Wrapper */
-      .icon-wrapper {
-        width: 80px;
-        height: 80px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-
-      /* Hover Effect */
-      .hover-effect {
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-      }
-      .hover-effect:hover {
-        transform: translateY(-10px);
-        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
-      }
-      /* Additional Gradient Backgrounds */
-      .bg-gradient-purple {
-        background: linear-gradient(45deg, #8e2de2, #4a00e0);
-      }
-      .bg-gradient-pink {
-        background: linear-gradient(45deg, #ff0099, #493240);
-      }
-      /* Hover Effect for Project Cards */
-      .hover-effect {
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-      }
-      .hover-effect:hover {
-        transform: translateY(-10px);
-        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
-      }
-
-      /* Project Card */
-      .project-card {
-        background: #fff;
-        border-radius: 10px;
-        overflow: hidden;
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      }
-
-      .project-card:hover {
-        transform: translateY(-10px);
-        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-      }
-
-      /* Project Image */
-      .project-image {
-        position: relative;
-        overflow: hidden;
-      }
-
-      .project-image img {
-        transition: transform 0.3s ease;
-      }
-
-      .project-card:hover .project-image img {
-        transform: scale(1.1);
-      }
-
-      /* Project Overlay */
-      .project-overlay {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: rgba(0, 0, 0, 0.6);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        opacity: 0;
-        transition: opacity 0.3s ease;
-      }
-
-      .project-card:hover .project-overlay {
-        opacity: 1;
-      }
-
-      .project-overlay a {
-        margin: 0 5px;
-        transition: transform 0.3s ease;
-      }
-
-      .project-overlay a:hover {
-        transform: translateY(-5px);
-      }
-
-      /* Project Content */
-      .project-content {
-        background: #fff;
-        text-align: center;
-      }
-
-      .project-content h5 {
-        font-size: 1.25rem;
-        margin-bottom: 0.5rem;
-      }
-
-      .project-content p {
-        font-size: 0.9rem;
-        color: #6c757d;
-      }
-    </style>
 <style>
 /* Enhanced Carousel Styles */
 .carousel-image {
@@ -2019,114 +1836,110 @@ class="text-center border border-5 border-light border-top-0 p-4"
 </div>
 <!-- Team End -->
 
+<!-- Quote/Contact Start -->
 <div
-      class="container-fluid bg-light overflow-hidden my-5 px-lg-0"
-      id="contact"
-    >
-      <div class="container quote px-lg-0">
-        <div class="row g-0 mx-lg-0">
-          <div class="col-lg-6 ps-lg-0" style="min-height: 400px">
-            <div class="position-relative h-100">
-              <img
-                class="position-absolute img-fluid w-100 h-100"
-                src="img/mailWithHand.png"
-                style="object-fit: cover"
-                alt=""
-              />
-            </div>
-          </div>
-          <div class="col-lg-6 quote-text py-5">
-            <div class="p-lg-5 pe-lg-0">
-              <div class="section-title text-start">
-                <h1 class="display-5 mb-4">Let's Work</h1>
-              </div>
-              <p class="mb-4 pb-2">
-               Ready to transform your video content? Whether you need viral short-form videos, professional long-form content, or cinematic documentaries, I'm here to bring your vision to life. Let's discuss your project and create content that stands out!
-              </p>
-              <form id="contact-form">
-                <div class="row g-3">
-                  <div class="col-12 col-sm-6">
-                    <input
-                      type="text"
-                      name="user_name"
-                      class="form-control border-0"
-                      placeholder="Your Name"
-                      style="height: 55px"
-                      required
-                    />
-                  </div>
-                  <div class="col-12 col-sm-6">
-                    <input
-                      type="email"
-                      name="email"
-                      class="form-control border-0"
-                      placeholder="Your Email"
-                      style="height: 55px"
-                      required
-                    />
-                  </div>
-                  <div class="col-12 col-sm-6">
-                    <input
-                      type="text"
-                      name="phone_number"
-                      class="form-control border-0"
-                      placeholder="Your Mobile"
-                      style="height: 55px"
-                      required
-                    />
-                  </div>
-                  <div class="col-12 col-sm-6">
-                    <select
-                      name="service"
-                      class="form-select border-0"
-                      style="height: 55px"
-                      required
-                    >
-                      <option value="" selected disabled>
-                        Select A Service
-                      </option>
-                      <option value="Web Development">Web Development</option>
-                      <option value="Mobile Development">
-                        Mobile Development
-                      </option>
-                      <option value="Web Hosting">Web Hosting</option>
-                      <option value="Graphics Design">Graphics Design</option>
-                      <option value="Logo Design">Logo Design</option>
-                      <option value="Printing">Printing</option>
-                      <option value="3D Designing">3D Designing</option>
-                      <option value="Video Editing">Video Editing</option>
-                      <option value="Consultation & Support">
-                        Consultation & Support
-                      </option>
-                    </select>
-                  </div>
-                  <div class="col-12">
-                    <textarea
-                      name="message"
-                      class="form-control border-0"
-                      placeholder="Special Note"
-                      required
-                    ></textarea>
-                  </div>
-                  <div class="col-12">
-                    <button class="btn btn-primary w-100 py-3" type="submit">
-                      Submit
-                    </button>
-                  </div>
-                </div>
-              </form>
-              <div id="success-message" class="alert alert-success mt-3 d-none">
-                Message sent successfully!
-              </div>
-          <!--    <div id="failure-message" class="alert alert-danger mt-3 d-none">
-                Failed to send message. Please try again.
-              </div> -->
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
+class="container-fluid bg-light overflow-hidden my-5 px-lg-0"
+id="contact"
+>
+<div class="container quote px-lg-0">
+<div class="row g-0 mx-lg-0">
+<div class="col-lg-6 ps-lg-0" style="min-height: 400px">
+<div class="position-relative h-100">
+<img
+class="position-absolute img-fluid w-100 h-100 fade-in-left"
+src="img/mailWithHand.png"
+style="object-fit: cover"
+alt=""
+/>
+</div>
+</div>
+<div class="col-lg-6 quote-text py-5">
+<div class="p-lg-5 pe-lg-0">
+<div class="section-title text-start">
+<h1 class="display-5 mb-4 fade-in-right">Let's Create Something Amazing</h1>
+</div>
+<p class="mb-4 pb-2 fade-in-right delay-1">
+Ready to transform your video content? Whether you need viral short-form videos, professional long-form content, or cinematic documentaries, I'm here to bring your vision to life. Let's discuss your project and create content that stands out!
+</p>
+<form id="contact-form">
+<div class="row g-3">
+<div class="col-12 col-sm-6">
+<input
+type="text"
+name="user_name"
+class="form-control border-0 fade-in-right delay-2"
+placeholder="Your Name"
+style="height: 55px"
+required
+/>
+</div>
+<div class="col-12 col-sm-6">
+<input
+type="email"
+name="email"
+class="form-control border-0 fade-in-right delay-2"
+placeholder="Your Email"
+style="height: 55px"
+required
+/>
+</div>
+<div class="col-12 col-sm-6">
+<input
+type="text"
+name="phone_number"
+class="form-control border-0 fade-in-right delay-3"
+placeholder="Your Mobile"
+style="height: 55px"
+required
+/>
+</div>
+<div class="col-12 col-sm-6">
+<select
+name="service"
+class="form-select border-0 fade-in-right delay-3"
+style="height: 55px"
+required
+>
+<option value="" selected disabled>
+Select Video Service
+</option>
+<option value="Short-Form Videos">Short-Form Videos</option>
+<option value="Long-Form Content">Long-Form Content</option>
+<option value="Documentary Editing">Documentary Editing</option>
+<option value="Commercial Videos">Gym promo video</option>
+<option value="Motion Graphics">Motion Graphics</option>
+<option value="Color Grading">Color Grading</option>
+<option value="Sound Design">Sound Design</option>
+<option value="Visual Effects">Visual Effects</option>
+<option value="Video Strategy">Talking head videos</option>
+</select>
+</div>
+<div class="col-12">
+<textarea
+name="message"
+class="form-control border-0 fade-in-right delay-4"
+placeholder="Tell me about your project"
+required
+></textarea>
+</div>
+<div class="col-12">
+<button class="btn btn-primary w-100 py-3 fade-in-right delay-5" type="submit">
+Get Started Now
+</button>
+</div>
+</div>
+</form>
+<div id="success-message" class="alert alert-success mt-3 d-none">
+Message sent successfully!
+</div>
+<!--<div id="failure-message" class="alert alert-danger mt-3 d-none">
+Failed to send message. Please try again.
+</div> -->
+</div>
+</div>
+</div>
+</div>
+</div>
 <!-- Quote End -->
 
 <!-- Footer Start -->
